@@ -1,0 +1,30 @@
+:root{
+    --cor-primaria-laranja:#F58A07;
+    --cor-primaria-verde:#669D31;
+    --cor-secundaria-amarela:#FEEA00;
+    --cor-secundaria-begeClaro:#FEFADC;
+    --cor-secundaria-preto:#2D2C2C;
+    --fonte-logo:"Mochiy Pop One", sans-serif;
+    --fonte-principal-conteudo:"DM sans", sans-serif;
+}
+
+.mochiy-pop-one-regular {
+    font-family: "Mochiy Pop One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.area-cards {
+    width: 95%;
+    margin: auto !important; 
+    display: flex;
+    justify-content:space-around;
+
+
+}
+
+.card-body {
+    margin-top: 50%;
+}
+
+
