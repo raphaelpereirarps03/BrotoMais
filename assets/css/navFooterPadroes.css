@@ -34,7 +34,8 @@
 html, body {
     width: 100%;
     height: auto;
-    background-color : #FEFADC  !important;   
+    background-color : #FEFADC  !important;
+    overflow-x: hidden;
 }
 
 nav {
@@ -76,7 +77,6 @@ nav {
 main {
 
     width: 100%;
-    margin: auto;
 }
 
 
