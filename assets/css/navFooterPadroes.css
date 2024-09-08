@@ -31,12 +31,21 @@
 
 }
 
-html, body {
-    width: 100%;
-    height: auto;
-    background-color : #FEFADC  !important;
+html {
     overflow-x: hidden;
 }
+
+body {
+    width: 100%;
+    background-color : #FEFADC  !important;
+   
+}
+body {
+    height: 0px;
+}
+
+
+
 
 nav {
     background: none;

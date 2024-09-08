@@ -1,0 +1,12 @@
+.area-cards {
+    width: 95%;
+    margin: auto !important; 
+    display: flex;
+    justify-content:space-around;
+
+
+}
+
+/* .card-body {
+    margin-top: 50%;
+} */
