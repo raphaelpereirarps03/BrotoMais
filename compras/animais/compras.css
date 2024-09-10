@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+
+/*Variáveis padrões*/
+:root{
+    --cor-primaria-laranja:#F58A07;
+    --cor-primaria-verde:#669D31;
+    --cor-secundaria-amarela:#FEEA00;
+    --cor-secundaria-begeClaro:#FEFADC;
+    --cor-secundaria-preto:#2D2C2C;
+    --fonte-logo:"Mochiy Pop One", sans-serif;
+    --fonte-principal-conteudo:"DM sans", sans-serif;
+}
+
+.mochiy-pop-one-regular {
+    font-family: "Mochiy Pop One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+/* Para tamanho de fontes, tentar trabalhar com REM, EM e  vh e vw */
+
+/*CSS resets*/
+* {
+    position: relative;
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+
+.desc{
+    align-items: center;
+    margin: 100px;
+    color: var(--cor-primaria-verde);
+    width: 60%;
+}
+.titulo{
+    font-size: 44px;
+    margin-left: 10px;
+}
+.text{
+    margin-top: 20px;
+    color: var(--cor-secundaria-preto);
+    font-size: 28px;
+}
+
+.bola{
+    width: 230px;
+    height: 225px;
+    flex-shrink: 0;
+    border-radius: 330px;
+    background: #669D31;
+    margin: 85px 5px 3px 15px;
+}
+
+.geral{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.compra{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+p{
+    color: var(--cor-secundaria-preto);
+}
+#comprar{
+    width: 163px;
+    height: 43px;
+    border-radius: 36px;
+    flex-shrink: 0;
+    color: var(--cor-secundaria-begeClaro);
+    background-color: var(--cor-primaria-laranja);
+}
