@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+
+/*Variáveis padrões*/
+:root{
+    --cor-primaria-laranja:#F58A07;
+    --cor-primaria-verde:#669D31;
+    --cor-secundaria-amarela:#FEEA00;
+    --cor-secundaria-begeClaro:#FEFADC;
+    --cor-secundaria-preto:#2D2C2C;
+    --fonte-logo:"Mochiy Pop One", sans-serif;
+    --fonte-principal-conteudo:"DM sans", sans-serif;
+}
+
+.mochiy-pop-one-regular {
+    font-family: "Mochiy Pop One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+/* Para tamanho de fontes, tentar trabalhar com REM, EM e  vh e vw */
+
+/*CSS resets*/
+* {
+    position: relative;
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+}
+
+.desc{
+    align-items: center;
+    margin: 5.208vw;
+    color: var(--cor-primaria-verde);
+    width: 70%;
+    font-family: var(--fonte-principal-conteudo);
+}
+.titulo{
+    font-size: 4.292vh;
+    font-weight: bold;
+}
+.text{
+    margin-top: 1.042vw;
+    color: var(--cor-secundaria-preto);
+    font-size: 1.358vw;
+}
+
+.bola{
+    width: 11.979vw;
+    height: 11.719vw;
+    flex-shrink: 0;
+    border-radius: 17.188vw;
+    background: #669D31;
+    margin: 4.427vw 0.26vw 0.156vw 0.781vw;
+}
+
+.geral{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.compra{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+p{
+    color: var(--cor-secundaria-preto);
+}
+.nome{
+    font-size: 1vw;
+    text-align: center;
+}
+#comprar{
+    width: 8.49vw;
+    font-size: 1vw;
+    height: 2.24vw;
+    border-radius: 1.875vw;
+    flex-shrink: 0;
+    color: var(--cor-secundaria-begeClaro);
+    background-color: var(--cor-primaria-laranja);
+}
+.video{
+    margin: 5.208vw;
+    text-align: end;
+    background-color: aqua;
+}
+video{
+    width: 25vw;
+    border-radius: 6.666vw 0px 0px 6.666vw;
+}
