@@ -18,7 +18,7 @@ main {
   height: auto;
   display: flex;
   justify-content: center;
-  margin: auto;
+  margin-bottom: 500px !important;
 }
 
 .row-cards {
@@ -32,139 +32,31 @@ main {
   font-weight: bolder;
 }
 
-#sideBar {
-  height: 75.6vh !important;
-  width: 22.4vw !important;
-}
 
-.card-item-plano {
+
+/* .card-item-plano {
   position: relative;
   height: 8.8vh !important;
   width: 20vw !important;
   right: 10px;
-}
-
-.estastic{
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 600px;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.linha1-flores{
-  display: flex;
-  width: 100%;
-  flex-direction: row;
-  height: 380px;
-  align-items: center;
-  justify-content: center;
-  gap: 80px;
-}
+} */
 
 
-.linha1-flores h5{
-  position: relative;
-
-}
-
-.linha1-flores p{
-  position: relative;
-
-}
 
 
-.linha2-flores{
-  display: flex;
-  width: 100%;
-  height: 200px;
-  align-items: center;
-  justify-content: center;
-  gap: 80px;
-}
-
-.circle1 {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  background: conic-gradient(
-    #f58a07 0% 75%,   /* Parte laranja de 75% */
-    #2d2c2c 75% 100%   /* Parte verde de 25% */
-  );
-  padding: 15px; /* Largura da borda simulada */
-  background-clip: border-box; /* Para que o gradiente pareça a borda */
-  box-sizing: border-box;
-  background-origin: border-box;
-  background-color: white; /* Cor do fundo da parte interna */
-  transition: ease 1s;
-
-}
-
-.circle2 {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  background: conic-gradient(
-    #f58a07 0% 60%,   /* Parte laranja de 75% */
-    #2d2c2c 60% 100%   /* Parte verde de 25% */
-  );
-  padding: 15px; /* Largura da borda simulada */
-  background-clip: border-box; /* Para que o gradiente pareça a borda */
-  box-sizing: border-box;
-  background-origin: border-box;
-  background-color: white; /* Cor do fundo da parte interna */
-  transition: ease 1s;
-
-}
-
-.circle3 {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  background: conic-gradient(
-    #f58a07 0% 90%,   /* Parte laranja de 75% */
-    #2d2c2c 90% 100%   /* Parte verde de 25% */
-  );
-  padding: 15px; /* Largura da borda simulada */
-  background-clip: border-box; /* Para que o gradiente pareça a borda */
-  box-sizing: border-box;
-  background-origin: border-box;
-  background-color: white; /* Cor do fundo da parte interna */
-  transition: ease 1s;
-
-}
-
-
-.circle4 {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  background: conic-gradient(
-    #f58a07 0% 43%,   /* Parte laranja de 75% */
-    #2d2c2c 43% 100%   /* Parte verde de 25% */
-  );
-  padding: 15px; /* Largura da borda simulada */
-  background-clip: border-box; /* Para que o gradiente pareça a borda */
-  box-sizing: border-box;
-  background-origin: border-box;
-  background-color: white; /* Cor do fundo da parte interna */
-  transition: ease 1s;
-}
-
-.circle:hover{
-  scale: 1.1;
-}
 
 
 .card-infos {
   padding: 2%;
   width: 100%;
-  height: 72vh !important;
+  height: 80em !important;
   margin-top: 0%;
   margin-bottom: 1%;
   flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
 }
 
 .colunaCard {
@@ -217,3 +109,31 @@ main {
 .card-item-plano:hover {
   cursor: pointer;
 }
+
+div .card-pedidos {
+  border: 1px var(--cor-secundaria-preto) solid;
+  height: auto;
+  background-color: var(--cor-secundaria-begeClaro);
+  width: 100%;
+}
+
+div .card-pedidos img{
+  max-height: 30vh;
+}
+
+
+div .card-chart {
+  border: 1px var(--cor-secundaria-preto) solid;
+  height: auto;
+  background-color: var(--cor-secundaria-begeClaro);
+  width: 100%;
+}
+
+footer {
+  display: flex;
+  margin-top: 50em;
+}
+
+
+
+

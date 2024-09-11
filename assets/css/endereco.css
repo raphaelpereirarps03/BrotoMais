@@ -37,12 +37,12 @@
       width: 22.4vw !important;
   }
   
-  .card-item-plano {
-      position: relative;
-      height: 8.8vh !important;
-      width: 20vw !important;
-      right: 10px;
-  }
+/* .card-item-plano {
+  position: relative;
+  height: 8.8vh !important;
+  width: 20vw !important;
+  right: 10px;
+} */
   
   .card-infos {
     padding: 2%;
