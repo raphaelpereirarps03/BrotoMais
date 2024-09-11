@@ -65,3 +65,15 @@ main {
     cursor: pointer;
     
 }
+
+#meuPerfil{
+    background-color: #669d31 !important;
+  }
+  
+  #meuPerfil svg {
+    fill: #fefadc !important;
+  }
+  
+  #meuPerfil p {
+    color: #fefadc !important;
+  }

@@ -7,11 +7,12 @@
     <title>Perfil Usuário - Broto+</title>
 
     <!-- Adiciona icone na aba do navegador-->
-    <link rel="shortcut icon" type="imagex/png" href="./assets/imgs/icons/brotoMaisIcon.png">
+    <link rel="shortcut icon" type="imagex/png" href="../../assets/imgs/icons/brotoMaisIcon.png">
 
     <!-- Linkando CSS's personalizados-->
-    <link rel="stylesheet" href="./assets/css/navFooterPadroes.css" type="text/css">
-    <link rel="stylesheet" href="./assets/css/perfilUsuario.css" type="text/css">
+
+    <link rel="stylesheet" href="../../assets/css/pedidos.css">
+    <link rel="stylesheet" href="./assets/css/navFooterPadroes.css">
 
     <!-- Linkando bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -36,13 +37,12 @@
     <!-- Linkando MD Bootstrap-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.3.2/mdb.min.css" rel="stylesheet" />
 
-
+ 
 
 
 </head>
 
 <body>
-    <!--Navbar -->
     <nav class="navbar navbar-expand-lg mb-5 ">
         <div class="container-fluid">
             <a class="navbar-brand me-auto" href="index.html"><img src="./assets/imgs/brotoMaisLogoLaranja.png"
@@ -96,17 +96,16 @@
     <!-- Fim Navbar -->
 
 
-
     <!-- Main - Cards -->
-    <main>
-        <div class="container">
-            <div class="row row-cards">
+    <main class="mt-5">
+        <div class="container mt-5">
+            <div class="row row-cards mt-5">
                 <div class="card mb-5 col-lg-4 col-md-12"
                     style="width: 23rem; height: 51.25rem; border-radius: 20px; background-color: #fefadc; border: 2px #2D2C2C solid;"
                     color>
                     <div class="card-body flex-colum ">
                         <a href="./perfilUsuario.html">
-                            <div class="row card-item-plano mb-3" id="meuPerfil"
+                            <div class="row card-item-plano mb-3" 
                                 style="border: 2px #2D2C2C solid; margin: auto; width: 90%; border-radius: 10px; padding: 5px;" onclick="selecionado()">
                                 <div style="display: flex; align-items: center; width: 100%; justify-content: flex-start;">
                                     <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960"
@@ -121,7 +120,7 @@
                             </div>
                         </a>
                         <a href="./pedidos.html">
-                            <div class="row card-item-plano mb-3"
+                            <div class="row card-item-plano mb-3 id" id="meusPedidos"
                                 style="border: 2px #2D2C2C solid; margin: auto; width: 90%; border-radius: 10px; padding: 5px;">
                                 <div style="display: flex; align-items: center; width: 100%; justify-content: flex-start;">
                                     <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960"
@@ -136,7 +135,7 @@
                             </div>
                         </a>
                         <a href="./endereco.html">
-                            <div class="row card-item-plano mb-3"
+                            <div class="row card-item-plano mb-3" 
                                 style="border: 2px #2D2C2C solid; margin: auto; width: 90%; border-radius: 10px; padding: 5px;">
                                 <div style="display: flex; align-items: center; width: 100%; justify-content: flex-start;">
                                     <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960"
@@ -150,28 +149,6 @@
                                 </div>
                             </div>
                         </a>
-
-                        <a href="./meusProdutos.html"></a>
-
-                            <div class="row card-item-plano mb-3" id="meuEndereco"
-                                style="border: 2px #2D2C2C solid; margin: auto; width: 90%; border-radius: 10px; padding: 5px;">
-                                <div
-                                    style="display: flex; align-items: center; width: 100%; justify-content: flex-start;">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" fill="#2D2C2C"
-                                        class="bi bi-bag" viewBox="0 0 16 16">
-                                        <path
-                                            d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z" />
-                                    </svg>
-                                    <p class="fw-normal"
-                                        style="margin-left: 10px; margin-bottom: 0; font-size: 1.4em; color: #2D2C2C;">
-                                        Meus
-                                        produtos</p>
-                                </div>
-                            </div>
-                        </a>
-
-
-
                         <a href="./devolucoes.html">
                             <div class="row card-item-plano mb-3"
                                 style="border: 2px #2D2C2C solid; margin: auto; width: 90%; border-radius: 10px; padding: 5px;">
@@ -189,7 +166,7 @@
                             </div>
                         </a>
                         <a href="./alterar.html">
-                            <div class="row card-item-plano mb-3"
+                            <div class="row card-item-plano mb-3" 
                                 style="border: 2px #2D2C2C solid; margin: auto; width: 90%; border-radius: 10px; padding: 5px;">
                                 <div style="display: flex; align-items: center; width: 100%; justify-content: flex-start;">
                                     <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960"
@@ -244,118 +221,82 @@
                 </div>
 
                 <div class="col-lg-8 col-md-12 mb-4">
-                    <h4>Dados do seu último pedido</h4>
-                    <div class="card card-infos mb-4"
-                        style="height: auto; border-radius: 20px; background-color: #fefadc; border: 2px #2D2C2C solid;">
-                        <div class="card-body d-flex flex-row">
-                            <div class="flex-column" style="flex: 1;">
-                                <p class="subTitulosCards mb-0">
-                                    Informação do envio
-                                </p>
-                                <p class="textosCards">Entrega padrão: 487441</p>
-
-                                <p class="subTitulosCards mb-0">
-                                    Informação de entrega
-                                </p>
-                                <p class="textosCards">
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960"
-                                        width="26px" fill="#2D2C2C">
-                                        <path
-                                            d="M240-160q-50 0-85-35t-35-85H40v-440q0-33 23.5-56.5T120-800h560v160h120l120 160v200h-80q0 50-35 85t-85 35q-50 0-85-35t-35-85H360q0 50-35 85t-85 35Zm0-80q17 0 28.5-11.5T280-280q0-17-11.5-28.5T240-320q-17 0-28.5 11.5T200-280q0 17 11.5 28.5T240-240ZM120-360h32q17-18 39-29t49-11q27 0 49 11t39 29h272v-360H120v360Zm600 120q17 0 28.5-11.5T760-280q0-17-11.5-28.5T720-320q-17 0-28.5 11.5T680-280q0 17 11.5 28.5T720-240Zm-40-200h170l-90-120h-80v120ZM360-540Z" />
-                                    </svg>
-                                    Pedido entregue:<br>06/09/2024
-                                    
-                                </p>
-                                
-
-                                <p class="subTitulosCards mb-0">
-                                    Informação do pedido
-                                </p>
-                                <p class="textosCards">
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960"
-                                        width="26px" fill="#2D2C2C">
-                                        <path
-                                            d="M841-518v318q0 33-23.5 56.5T761-120H201q-33 0-56.5-23.5T121-200v-318q-23-21-35.5-54t-.5-72l42-136q8-26 28.5-43t47.5-17h556q27 0 47 16.5t29 43.5l42 136q12 39-.5 71T841-518Zm-272-42q27 0 41-18.5t11-41.5l-22-140h-78v148q0 21 14 36.5t34 15.5Zm-180 0q23 0 37.5-15.5T441-612v-148h-78l-22 140q-4 24 10.5 42t37.5 18Zm-178 0q18 0 31.5-13t16.5-33l22-154h-78l-40 134q-6 20 6.5 43t41.5 23Zm540 0q29 0 42-23t6-43l-42-134h-76l22 154q3 20 16.5 33t31.5 13ZM201-200h560v-282q-5 2-6.5 2H751q-27 0-47.5-9T663-518q-18 18-41 28t-49 10q-27 0-50.5-10T481-518q-17 18-39.5 28T393-480q-29 0-52.5-10T299-518q-21 21-41.5 29.5T211-480h-4.5q-2.5 0-5.5-2v282Zm560 0H201h560Z" />
-                                    </svg>
-                                    Lírio da Paz:<br>R$32,90
-                                </p>
-                            </div>
-
-                            <div class="flex-column text-center">
-                                <img src="./assets/imgs/pedido.png" alt="pedidoPlanta" class="img-fluid mb-3"
-                                    style="max-width: 75%; border-radius: 15px; ">
-
-                                <p class="subTitulosCards mb-0">
-                                    ID do pedido
-                                </p>
-                                <p class="textosCards">
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960"
-                                        width="26px" fill="#2D2C2C">
-                                        <path
-                                            d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360Zm0-80h360v-480H360v480ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Zm160-240v-480 480Z" />
-                                    </svg>
-                                    7725068610
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <h4>Dados Pessoais</h4>
+                    <h4>Dados das suas Vendas</h4>
                     <div class="card card-infos"
-                        style="height: auto; border-radius: 20px; background-color: #fefadc; border: 2px #2D2C2C solid;">
-                        <div class="card-body d-flex flex-row">
-                            <div class="flex-column" style="flex: 1;">
-                                <p class="subTitulosCards mb-0">
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#2D2C2C"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/></svg>
-                                    Nome Completo:
-                                </p>
-                                <p class="textosCards">Eleanor Pena</p>
+                        style="height: 713px; border-radius: 20px; background-color: #fefacd; border: 2px #2D2C2C solid;">
+                        <div class="card-body flex-row">
+                            <div>
 
-                                <p class="subTitulosCards mb-0">
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#2D2C2C"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg>
-                                    Email:
-                                </p>
-                                <p class="textosCards">
-                                    eleanorpena@gmail.com
-                                </p>
+                                <div>
 
-                                <p class="subTitulosCards mb-0">
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#2D2C2C"><path d="M560-440h200v-80H560v80Zm0-120h200v-80H560v80ZM200-320h320v-22q0-45-44-71.5T360-440q-72 0-116 26.5T200-342v22Zm160-160q33 0 56.5-23.5T440-560q0-33-23.5-56.5T360-640q-33 0-56.5 23.5T280-560q0 33 23.5 56.5T360-480ZM160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm0-80h640v-480H160v480Zm0 0v-480 480Z"/></svg>
-                                    CPF:
-                                </p>
-                                <p class="textosCards">
-                                    
-                                    549.540.330-47
-                                </p>
+
+
+                                </div>
                             </div>
 
-                            <div class="flex-column text-start">
-                                
 
-                                <p class="subTitulosCards mb-0">
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#2D2C2C"><path d="M200-80q-33 0-56.5-23.5T120-160v-560q0-33 23.5-56.5T200-800h40v-80h80v80h320v-80h80v80h40q33 0 56.5 23.5T840-720v560q0 33-23.5 56.5T760-80H200Zm0-80h560v-400H200v400Zm0-480h560v-80H200v80Zm0 0v-80 80Zm280 240q-17 0-28.5-11.5T440-440q0-17 11.5-28.5T480-480q17 0 28.5 11.5T520-440q0 17-11.5 28.5T480-400Zm-160 0q-17 0-28.5-11.5T280-440q0-17 11.5-28.5T320-480q17 0 28.5 11.5T360-440q0 17-11.5 28.5T320-400Zm320 0q-17 0-28.5-11.5T600-440q0-17 11.5-28.5T640-480q17 0 28.5 11.5T680-440q0 17-11.5 28.5T640-400ZM480-240q-17 0-28.5-11.5T440-280q0-17 11.5-28.5T480-320q17 0 28.5 11.5T520-280q0 17-11.5 28.5T480-240Zm-160 0q-17 0-28.5-11.5T280-280q0-17 11.5-28.5T320-320q17 0 28.5 11.5T360-280q0 17-11.5 28.5T320-240Zm320 0q-17 0-28.5-11.5T600-280q0-17 11.5-28.5T640-320q17 0 28.5 11.5T680-280q0 17-11.5 28.5T640-240Z"/></svg>
-                                    Data de Nascimento
-                                </p>
-                                <p class="textosCards">
-                                    09/09/1996
-                                </p>
-                                <p class="subTitulosCards mb-0">
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#2D2C2C"><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg>
-                                    Telefone Celular
-                                </p>
-                                <p class="textosCards">
-                                   
-                                    (303) 555-0105
-                                </p>
+
+
+                            <div class="estastic">
+
+                                <div class="linha1-flores">
+
+                                    <div class="">
+
+                                        <div class="circle1 circle"></div>
+
+                                        <h5 class="mt-3 ms-4">Venda em São paulo</h5>
+                                        <p class="ms-5 ps-5" id="bia">75%</p>
+
+                                    </div>
+                                    <div class="">
+
+                                        <div class="circle2 circle"></div>
+                                        <h5 class="mt-3 ms-1" id="completName">Venda em Santa Catarina</h5>
+                                        <p class="ms-5 ps-5" id="rapha">60%</p>
+                                    </div>
+
+                                </div>
+
+                                <div class="linha2-flores">
+
+                                    <div class="">
+
+                                        <div class="circle3 circle"></div>
+                                        <h5 class="mt-3 ms-5 me-3" id="completName">Venda Online</h5>
+                                        <p class="ms-5 ps-5" id="rapha">90%</p>
+
+                                    </div>
+                                    <div class="">
+
+                                        <div class="circle4 circle"></div>
+                                        <h5 class="mt-3 ms-3 me-3">Aumento nas Buscas</h5>
+                                        <p class="ms-5 ps-5" id="rapha">43%</p>
+                                    </div>
+
+
+                                </div>
                             </div>
+
+
                         </div>
+
+
+
+
                     </div>
+
                 </div>
-
-
-
             </div>
+        </div>
+
+
+
+        </div>
+
+
+
+        </div>
         </div>
         </div>
     </main>
@@ -367,89 +308,11 @@
 
 
     <!--Footer -->
-    
-    <a id="footer" name="footer"></a>
-    <footer class="row p-4 d-flex justify-content-between row-cols-md-5 py-5 my-5 ">
-        <div class="col mb-3">
-            <a href="index.html" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
-                <img src="./assets/imgs/brotoMaisLogo.png" class="logoBroto" alt="Logo Broto Mais">
-            </a>
-            <p>Do pequeno produtor, para a sua casa</p>
-        </div>
 
-
-
-        <div class="col mb-3 ">
-            <h5 class="mb-4 fw-bold">Sobre a Broto+</h5>
-            <ul class="nav flex-column">
-                <li class="nav-item mb-4"><a href="#" class="nav-link p-0 ">Quem somos</a></li>
-                <li class="nav-item mb-4"><a href="#" class="nav-link p-0 ">Seja um parceiro</a></li>
-                <li class="nav-item mb-4"><a href="#" class="nav-link p-0 ">Nossa loja</a></li>
-                <li class="nav-item mb-4"><a href="#" class="nav-link p-0 ">Planos</a></li>
-
-            </ul>
-        </div>
-
-        <div class="col mb-3">
-            <h5 class="mb-4 fw-bold">Entre em contato </h5>
-            <ul class="nav flex-column">
-                <li class="nav-item mb-1">Telefone: </li>
-                <li class="nav-item mb-1"><a href="#" class="nav-link p-0 ">(11) 2632-4489</a></li>
-                <li class="nav-item mb-4"><a href="#" class="nav-link p-0 ">(11) 1028-5678</a></li>
-
-                <li class="nav-item mb-1">Email: </li>
-                <li class="nav-item mb-4"><a href="#" class="nav-link p-0 ">brotomais@gmail.com.br</a></li>
-
-                <li class="nav-item mb-1">Endereço: </li>
-                <li class="nav-item mb-4"><a href="#" class="nav-link p-0 ">Rua tito, 54 - Lapa,SP</a></li>
-            </ul>
-        </div>
-
-        <div class="col mb-3">
-            <h5 class="fw-bold">Redes Sociais</h5>
-            <ul class="nav flex-column">
-                <ul class="nav flex-row mb-4">
-                    <li class="nav-item mb-2 me-3"><a href="#" class="nav-link p-0"><i
-                                class="fa-brands fa-instagram fa-2xl" style="color: #FEFADC;"></i></a></li>
-                    <li class="nav-item mb-2 me-3"><a href="#" class="nav-link p-0"><i
-                                class="fa-brands fa-facebook fa-2xl" style="color: #FEFADC;"></i></a></li>
-                    <li class="nav-item mb-2 me-3"><a href="#" class="nav-link p-0"><i
-                                class="fa-brands fa-whatsapp fa-2xl" style="color: #FEFADC;"></i></a></li>
-                    <li class="nav-item mb-2 me-3"><a href="#" class="nav-link p-0"><i
-                                class="fa-brands fa-youtube fa-2xl" style="color: #FEFADC;"></i></a></li>
-                </ul>
-                <h5 class="fw-bold">Formas de pagamento</h5>
-                <ul class="nav flex-row mb-4">
-                    <li class="nav-item mb-2 me-3"><a href="#" class="nav-link p-0"><img
-                                src="./assets/imgs/icons/mastercad.png" alt="" style="height: 30px; width: 60px;"></a>
-                    </li>
-                    <li class="nav-item mb-2 me-3"><a href="#" class="nav-link p-0"><img
-                                src="./assets/imgs/icons/visa.png" alt="" style="height: 30px; width: 60px;"></a></li>
-                    <li class="nav-item mb-2 me-3"><a href="#" class="nav-link p-0"><img
-                                src="./assets/imgs/icons/hipercard.png" alt="" style="height: 30px; width: 60px;"></a>
-                    </li>
-                </ul>
-                <ul class="nav flex-row mb-4">
-                    <li class="nav-item mb-2 me-3"><a href="#" class="nav-link p-0"><img
-                                src="./assets/imgs/icons/elo.png" alt="" style="height: 30px; width: 60px;"></a></li>
-                    <li class="nav-item mb-2 me-3"><a href="#" class="nav-link p-0"><img
-                                src="./assets/imgs/icons/barcode.png" alt="" style="height: 30px; width: 60px;"></a>
-                    </li>
-                    <li class="nav-item mb-2 me-3"><a href="#" class="nav-link p-0"><img
-                                src="./assets/imgs/icons/pix.png" alt="" style="height: 30px; width: 60px;"></a></li>
-
-                </ul>
-
-                <li class="nav-item mb-1">Prazo de entrega</li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0">3 à 5 dias úteis</a></li>
-
-            </ul>
-        </div>
-    </footer>
     <!-- Fim Footer -->
 
 
-    <script src="./assets/js/index.js"></script>
+    <script src="../assets/script.js"></script>
 
     <!-- Linkando JS do MD Bootstrap -->
     <script type="text/javascript"
