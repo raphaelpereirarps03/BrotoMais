@@ -23,8 +23,52 @@
 
 }
 
-.card-body {
-    margin-top: 50%;
+
+
+
+.card {
+    transition: all 1.1s;
 }
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+
+.planosImgs {
+    max-width: 80%;
+    transition: all 1.1s;
+}
+
+.planosImgs:hover {
+    transform: scale(1.2);
+}
+
+
+.card-body {
+    margin-top: 0%;
+}
+
+.card-item-plano {
+    transition: 0.5s;
+}
+
+.card-item-plano:hover {
+    border: none !important;
+    background-color: #0d48eb !important;
+    color: #FEFADC !important;
+    cursor: pointer;
+}
+
+.buttonQueroPlano .queroPlano {
+    transition: 0.5s;
+
+}
+
+.buttonQueroPlano .queroPlano:hover {
+    background-color: #0d48eb !important;
+    color: #FEFADC !important;
+}
+
 
 

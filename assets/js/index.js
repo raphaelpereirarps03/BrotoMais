@@ -19,7 +19,6 @@ window.onclick = function(event) {
 
 let selecionado="false"
 function selecionado() {
-  let selecionado="true";
   document.querySelector(".card-item-plano").style.backgroundColor="#669D31";
-  document.querySelector(".fw-normal").style.color="#FEFADC";
+  document.querySelector(".fw-normal").style.color="#fefadc";
 }
