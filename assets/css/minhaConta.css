@@ -8,7 +8,7 @@
   --fonte-principal-conteudo: "DM sans", sans-serif;
 }
 
-body{
+body{ 
     background-color: var(--cor-secundaria-begeClaro) !important;
 }
 

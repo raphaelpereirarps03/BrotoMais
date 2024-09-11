@@ -7,7 +7,7 @@
     --fonte-logo: "Mochiy Pop One", sans-serif;
     --fonte-principal-conteudo: "DM sans", sans-serif;
   }
-  
+   
   body{
       background-color: var(--cor-secundaria-begeClaro) !important;
     font-family: var(--fonte-principal-conteudo);
