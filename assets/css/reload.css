@@ -5,7 +5,7 @@
 }
 
 body{
-    background-image: url(assets/imgs/indoor-plants-studio.jpg);
+    background-image: url(../imgs/indoor-plants-studio.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -15,17 +15,16 @@ body{
     height: 1050px;
     transform: rotate(0deg);
     left: 718px;
-    z-index: -1;
+    top: -270px;
     position: absolute;
 }
 
 #conteudo{
-    margin-top: 230px;
+    top: 180px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: absolute;
 }
 
 img{
@@ -34,6 +33,7 @@ img{
 }
 
 #retangulo{
+    display: flex;
     top: 30px;
     width: 550px;
     height: 180px;
@@ -42,12 +42,33 @@ img{
     background: rgba(254, 250, 220, 0.20);
     backdrop-filter: blur(25px);
     justify-content: center;
+    align-items: center;
 }
 
-h1{
+#retangulo h1{
     text-align: center;
     font-family: "DM Sans";
-    font-size: 120px;
+    font-size: 50px;
     font-style: bold;
     color: #FEFADC;
+}
+
+#carregar img{
+    width: 200px;
+    height: 200px;
+}
+
+@-webkit-keyframes girar{
+    from{
+       transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg)
+    }
+}
+
+#carregar{
+    animation-iteration-count: infinite;
+    animation-name: girar;
+    animation-duration: 3s;
 }
