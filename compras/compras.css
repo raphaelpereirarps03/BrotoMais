@@ -39,22 +39,23 @@ header{
     margin: 5.208vw;
     color: var(--cor-primaria-verde);
     width: 70%;
+    font-family: var(--fonte-principal-conteudo);
 }
 .titulo{
     font-size: 4.292vh;
-    margin-left: 0.521vw;
+    font-weight: bold;
 }
 .text{
     margin-top: 1.042vw;
     color: var(--cor-secundaria-preto);
-    font-size: 1.458vw;
+    font-size: 1.358vw;
 }
 
 .bola{
     width: 11.979vw;
     height: 11.719vw;
     flex-shrink: 0;
-    border-radius: 330px;
+    border-radius: 17.188vw;
     background: #669D31;
     margin: 4.427vw 0.26vw 0.156vw 0.781vw;
 }
@@ -75,11 +76,12 @@ p{
     color: var(--cor-secundaria-preto);
 }
 .nome{
-    font-size: 0.885vw;
+    font-size: 1vw;
+    text-align: center;
 }
 #comprar{
     width: 8.49vw;
-    font-size: 0.885vw;
+    font-size: 1vw;
     height: 2.24vw;
     border-radius: 1.875vw;
     flex-shrink: 0;
@@ -93,5 +95,5 @@ p{
 }
 video{
     width: 25vw;
-    border-radius: 126px 0px 0px 126px;
+    border-radius: 6.666vw 0px 0px 6.666vw;
 }
