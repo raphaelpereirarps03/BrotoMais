@@ -1,0 +1,219 @@
+:root {
+  --cor-primaria-laranja: #f58a07;
+  --cor-primaria-verde: #669d31;
+  --cor-secundaria-amarela: #feea00;
+  --cor-secundaria-begeClaro: #fefadc;
+  --cor-secundaria-preto: #2d2c2c;
+  --fonte-logo: "Mochiy Pop One", sans-serif;
+  --fonte-principal-conteudo: "DM sans", sans-serif;
+}
+
+body {
+  background-color: var(--cor-secundaria-begeClaro) !important; 
+}
+
+main {
+  color: var(--cor-secundaria-preto);
+  width: 80%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.row-cards {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.row-cards h4 {
+  margin-left: 5%;
+  font-weight: bolder;
+}
+
+#sideBar {
+  height: 75.6vh !important;
+  width: 22.4vw !important;
+}
+
+.card-item-plano {
+  position: relative;
+  height: 8.8vh !important;
+  width: 20vw !important;
+  right: 10px;
+}
+
+.estastic{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 600px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.linha1-flores{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  height: 380px;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+}
+
+
+.linha1-flores h5{
+  position: relative;
+
+}
+
+.linha1-flores p{
+  position: relative;
+
+}
+
+
+.linha2-flores{
+  display: flex;
+  width: 100%;
+  height: 200px;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+}
+
+.circle1 {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: conic-gradient(
+    #f58a07 0% 75%,   /* Parte laranja de 75% */
+    #2d2c2c 75% 100%   /* Parte verde de 25% */
+  );
+  padding: 15px; /* Largura da borda simulada */
+  background-clip: border-box; /* Para que o gradiente pareça a borda */
+  box-sizing: border-box;
+  background-origin: border-box;
+  background-color: white; /* Cor do fundo da parte interna */
+  transition: ease 1s;
+
+}
+
+.circle2 {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: conic-gradient(
+    #f58a07 0% 60%,   /* Parte laranja de 75% */
+    #2d2c2c 60% 100%   /* Parte verde de 25% */
+  );
+  padding: 15px; /* Largura da borda simulada */
+  background-clip: border-box; /* Para que o gradiente pareça a borda */
+  box-sizing: border-box;
+  background-origin: border-box;
+  background-color: white; /* Cor do fundo da parte interna */
+  transition: ease 1s;
+
+}
+
+.circle3 {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: conic-gradient(
+    #f58a07 0% 90%,   /* Parte laranja de 75% */
+    #2d2c2c 90% 100%   /* Parte verde de 25% */
+  );
+  padding: 15px; /* Largura da borda simulada */
+  background-clip: border-box; /* Para que o gradiente pareça a borda */
+  box-sizing: border-box;
+  background-origin: border-box;
+  background-color: white; /* Cor do fundo da parte interna */
+  transition: ease 1s;
+
+}
+
+
+.circle4 {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: conic-gradient(
+    #f58a07 0% 43%,   /* Parte laranja de 75% */
+    #2d2c2c 43% 100%   /* Parte verde de 25% */
+  );
+  padding: 15px; /* Largura da borda simulada */
+  background-clip: border-box; /* Para que o gradiente pareça a borda */
+  box-sizing: border-box;
+  background-origin: border-box;
+  background-color: white; /* Cor do fundo da parte interna */
+  transition: ease 1s;
+}
+
+.circle:hover{
+  scale: 1.1;
+}
+
+
+.card-infos {
+  padding: 2%;
+  width: 100%;
+  height: 72vh !important;
+  margin-top: 0%;
+  margin-bottom: 1%;
+  flex-wrap: wrap;
+}
+
+.colunaCard {
+  border: 1px solid;
+}
+
+.subTitulosCards {
+  font-weight: bolder;
+}
+
+.textosCards {
+  font-weight: 500;
+}
+
+.img-background {
+  width: 226px;
+  height: 170px;
+  border-radius: 36px;
+  background: #f58a07;
+}
+
+.img-background img {
+  position: relative;
+  height: 30vh;
+  /* width: 500vw; */
+  bottom: 90px;
+  object-fit: cover;
+}
+
+#meusPedidos{
+  background-color: #669d31 !important;
+}
+
+#meusPedidos svg {
+  fill: #fefadc !important;
+}
+
+#meusPedidos p {
+  color: #fefadc !important;
+}
+
+
+.textosCards,
+.subTitulosCards {
+  font-family: var(--fonte-principal-conteudo);
+  color: var(--cor-secundaria-preto);
+  font-size: 1.1em;
+}
+
+.card-item-plano:hover {
+  cursor: pointer;
+}

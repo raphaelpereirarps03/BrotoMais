@@ -1,0 +1,251 @@
+:root {
+    --cor-primaria-laranja: #f58a07;
+    --cor-primaria-verde: #669d31;
+    --cor-secundaria-amarela: #feea00;
+    --cor-secundaria-begeClaro: #fefadc;
+    --cor-secundaria-preto: #2d2c2c;
+    --fonte-logo: "Mochiy Pop One", sans-serif;
+    --fonte-principal-conteudo: "DM sans", sans-serif;
+  }
+   
+  body{
+      background-color: var(--cor-secundaria-begeClaro) !important;
+  }
+  
+  main {
+    color: var(--cor-secundaria-preto);
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  }
+  
+  .row-cards {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .row-cards h4 {
+    margin-left: 5%;
+    font-weight: bolder;
+  }
+  
+  #sideBar{
+      height:75.6vh !important;
+      width: 22.4vw !important;
+  }
+  
+  .card-item-plano {
+      position: relative;
+      height: 8.8vh !important;
+      width: 20vw !important;
+      right: 10px;
+  }
+  
+  .card-infos {
+    padding: 2%;
+    width: 100%;
+    margin-top: 0%;
+    margin-bottom: 1%;
+    flex-wrap: wrap;
+  }
+  
+  .colunaCard {
+    border: 1px solid;
+  }
+  
+  .subTitulosCards {
+    font-weight: bolder;
+  }
+  
+  .textosCards {
+    font-weight: 500;
+  }
+  
+ 
+
+  .linha1-flores{
+    display: flex;
+    width: 100%;
+    height: 380px;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+  }
+
+  .linha1-flores img:hover{
+    scale: 1.2;
+  }
+  
+  .img-background1, .img-background2 , .img-background3, .img-background4 , .img-background5, .img-background6 {
+    width: 200px;
+    height: 170px;
+    border-radius: 36px;
+    background: #f58a07;
+  }
+  
+
+.troca-verde{
+  position: relative;
+  left: 65% !important;
+  bottom: 78% !important;
+  background-color: #669d31;
+  width: 3vw;
+  text-align: center;
+color: #fefadc;  border-radius: 20px;
+}
+
+.devolucao{
+  position: relative;
+  left: 65% !important;
+  bottom: 100% !important;
+  background-color: #FEEA00;
+  width: 3vw;
+  text-align: center;
+color: #2D2C2C; 
+ border-radius: 20px;
+}
+
+.devolucao:hover{
+  scale: 1.1;
+}
+
+.troca-verde:hover{
+  scale: 1.1;
+}
+
+
+  .img-background1 img{
+      position: relative;
+      height: 25vh;
+      left: 30px;
+      /* width: 500vw; */
+      bottom: 50px;
+      object-fit: cover;
+    transition: ease 1s;
+
+
+  }
+
+.img-background1 p{
+  position: relative;
+  bottom: 98px;
+  left: 10px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+
+  .img-background2 img{
+    position: relative;
+    height: 27vh;
+    left: 30px;
+    /* width: 500vw; */
+    bottom: 90px;
+    object-fit: cover;
+    transition: ease 1s;
+
+}
+
+.img-background2 p{
+  position: relative;
+  bottom: 110px;
+  left: 10px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.linha2-flores{
+  display: flex;
+  width: 100%;
+  height: 200px;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+}
+
+.linha2-flores img:hover{
+  scale: 1.2;
+}
+
+.img-background4 img{
+  position: relative;
+  height: 25vh;
+  left: 30px;
+  /* width: 500vw; */
+  bottom: 90px;
+  object-fit: cover;
+  transition: ease 1s;
+
+}
+
+.img-background4 p{
+  position: relative;
+  bottom: 98px;
+  left: 10px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.img-background5 img{
+  position: relative;
+  height: 30vh;
+  left: 30px;
+  /* width: 500vw; */
+  bottom: 90px;
+  object-fit: cover;
+  transition: ease 1s;
+
+}
+
+.img-background5 p{
+  position: relative;
+  bottom: 145px;
+  left: 10px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.img-background6 img{
+  position: relative;
+  height: 30vh;
+  left: 30px;
+  /* width: 500vw; */
+  bottom: 90px;
+  object-fit: cover;
+  transition: ease 1s;
+}
+
+.img-background6 p{
+  position: relative;
+  bottom: 145px;
+  left: 10px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+  
+  #minhasDevolucoes{
+    background-color: #669d31 !important;
+  }
+  
+  #minhasDevolucoes svg {
+    fill: #fefadc !important;
+  }
+  
+  #minhasDevolucoes p {
+    color: #fefadc !important;
+  }
+  
+  .textosCards,
+  .subTitulosCards {
+    font-family: var(--fonte-principal-conteudo);
+    color: var(--cor-secundaria-preto);
+    font-size: 1.1em;
+  }
+  
+  .card-item-plano:hover {
+    cursor: pointer;
+  }
+  
