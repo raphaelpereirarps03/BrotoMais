@@ -35,12 +35,12 @@
 }
 
 
-.planosImgs {
+.card .planosImgs {
     max-width: 80%;
     transition: all 1.1s;
 }
 
-.planosImgs:hover {
+.card:hover .planosImgs {
     transform: scale(1.2);
 }
 
