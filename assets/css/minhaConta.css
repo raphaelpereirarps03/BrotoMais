@@ -1,0 +1,110 @@
+:root {
+  --cor-primaria-laranja: #f58a07;
+  --cor-primaria-verde: #669d31;
+  --cor-secundaria-amarela: #feea00;
+  --cor-secundaria-begeClaro: #fefadc;
+  --cor-secundaria-preto: #2d2c2c;
+  --fonte-logo: "Mochiy Pop One", sans-serif;
+  --fonte-principal-conteudo: "DM sans", sans-serif;
+}
+
+body{
+    background-color: var(--cor-secundaria-begeClaro) !important;
+}
+
+main {
+  color: var(--cor-secundaria-preto);
+  width: 80%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.row-cards {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.row-cards h4 {
+  margin-left: 5%;
+  font-weight: bolder;
+}
+
+#sideBar{
+    height:75.6vh !important;
+    width: 22.4vw !important;
+}
+
+.card-item-plano {
+    position: relative;
+    height: 8.8vh !important;
+    width: 20vw !important;
+    right: 10px;
+}
+
+.card-infos {
+  padding: 2%;
+  width: 100%;
+  margin-top: 0%;
+  margin-bottom: 1%;
+  flex-wrap: wrap;
+}
+
+.colunaCard {
+  border: 1px solid;
+}
+
+.subTitulosCards {
+  font-weight: bolder;
+}
+
+.textosCards {
+  font-weight: 500;
+}
+
+.img-background {
+  width: 210px;
+  height: 170px;
+  border-radius: 36px;
+  background: #f58a07;
+}
+
+.img-background img{
+    position: relative;
+    height: 30vh;
+    /* width: 500vw; */
+    bottom: 90px;
+    object-fit: cover;
+}
+
+#minhaConta{
+  background-color: #669d31 !important;
+}
+
+#minhaConta svg {
+  fill: #fefadc !important;
+}
+
+#minhaConta p {
+  color: #fefadc !important;
+}
+
+.textosCards,
+.subTitulosCards {
+  font-family: var(--fonte-principal-conteudo);
+  color: var(--cor-secundaria-preto);
+  font-size: 1.1em;
+}
+
+.card-item-plano:hover {
+  cursor: pointer;
+}
+
+
+
+#Confirmacao-modal{
+  background-color: #669d31 !important;
+  height: 10px !important;
+}
