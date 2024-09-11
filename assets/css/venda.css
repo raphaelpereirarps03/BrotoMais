@@ -1,0 +1,351 @@
+  * {
+    color: #2D2C2C;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    position: relative;
+    text-decoration: none;
+    font-family: var(--fonte-principal-conteudo);
+  }
+  body{
+    background-color: #FEFADC;
+    overflow-x: hidden;
+  }
+  main{
+    height: 0px;
+  }
+  nav{
+    z-index: 5;
+  }
+  /* imagem */
+
+  #fundo{
+    background-color: #F58A07;
+    border-radius: 36px;
+    width: 48%;
+    height: 570px;
+    margin: 10% 0% 0% 10%;
+    display: flex;
+    justify-content: center;
+    float: left;
+  }
+  /*Fotos multi arquivos*/
+  #lirio,#orbifolia,#cactus,#espada,#limao{
+    bottom: 100%;
+  }
+  /* Lírio */
+  #lirio{
+    img{
+      left: 5%;
+      width: 1300px;
+  }
+  }
+  /*orbifolia*/
+  #orbifolia{
+    img{
+      width: 900px;
+      left: 0%;
+    }
+  }
+  /*cactus*/
+  #cactus{
+    img{
+      width: 1150px;
+    }
+  }
+  /*Espada*/
+  #espada{
+    bottom: 50%;
+    img{
+      width: 600px;
+      right: 15%;
+    }
+  }
+  /*Limão*/
+  #limao{
+    bottom: 30%;
+    img{
+      left: 5%;
+    }
+  }
+
+  #form{
+    margin: 10% 0% 0% 4%;
+    width: 27.8%;
+    height: 75vh;
+    border-radius: 36px;
+    float: left;
+    border: solid 2px black;
+  } 
+  #form p{
+    text-align: left;
+  }
+  #texto{
+    margin: 10%;
+    text-align: left;
+    h1{
+        margin-top: 20%;
+        font-size: 3.8vw;
+    }
+    h2{
+      font-size: 2.8vw;
+    }
+  }
+  #texto_inside{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    div{
+      width: 47%;
+      text-align: center;
+      background-color: #669D31;
+      color: #FEFADC;
+      font-weight: 900;
+      font-size: 1.2vw;
+      border-radius: 36px;
+      padding: 5px;
+      margin-bottom: 5%;
+    }
+    #luz{
+      background-color: #F58A07;
+    }
+    #rega{
+      background-color: #F58A07;
+    }
+  }
+  #aside1{
+    margin-top: 5vh;
+    @media only screen and (max-width:1700px) {  /* correção de altura do calculando cep */
+      margin-top: 11vh;
+    }
+  }
+
+  #qnt{
+    width: 12%;
+    float: left;
+    margin: 0% 5% 0% 10%;
+    input{
+        width: 100%;
+        height: 65px;
+        border: solid black 2px;
+        border-radius: 12px;
+        font-size: 2.5vw;
+        text-align: center;
+        background-color: var(--cor-secundaria-begeClaro);
+    }
+  }
+  #comprar{
+    width: 63%;
+    float: left;
+    p{
+    border-radius: 40px;
+    font-size: 2.5vw;
+    font-weight: 900;
+    color: #FEFADC;
+    background: var(--Primria, #669D31);
+    text-align: center;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    margin-bottom: 8%;
+  }
+  #calculo{
+    clear: left;
+    margin-left: 10%;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 3%;
+  }
+  #cep{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    input{
+      width: 50%;
+      height: 60px;
+      background-color: var(--cor-secundaria-begeClaro);
+      float: left;
+      text-align: center;
+      font-size: 16px;
+      border: black solid 2px;
+      border-radius: 16px;
+    }
+    a p{
+        float: left;
+        text-align: center;
+        font-size: 24px;
+        font-weight: 900;
+        color: white;
+        border-radius: 36px;
+        background: var(--Primria, #F58A07);
+        padding: 13px;
+    }
+  }
+  #teste{
+    clear: left;
+    left: 10%;
+    width: 52%;
+    text-align: left;
+    h1{
+        color: #669D31;
+        opacity: 0.6;
+        font-size: 3vw;
+        font-weight: 700;
+    }
+  }
+  #carac,#linha{
+    margin: auto;
+    margin: 3% 0% 0% 10%;
+    width: 80%;
+    border-bottom: 2px solid black; 
+    height: 85px;
+    text-align: left;
+  }
+  hr{
+    bottom: 20px;
+    opacity: 0;
+  }
+  #linha{
+    opacity: 1;
+    border-top: 0px;
+    margin-top: 15%;
+  }
+  #carac div{
+    top: 20px;
+    width: 20%;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    float: left;
+    cursor: pointer;
+  }
+  #carac div:focus{
+    hr{
+      border-radius: 15px;
+      border: #F58A07 5px solid;
+      opacity: 1;
+    }
+  }
+  #carac p{
+    clear: both;
+    position: absolute;
+    top: 4em;
+    font-size: 1.8vw;
+    font-style: italic;
+    font-weight: 400;
+    visibility: hidden;
+  }
+  #review{
+    border: black 2px solid;
+    margin: auto;
+    width: 80%;
+    height: auto;
+    border-radius: 36px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  #review div{
+    margin: 5% 0% 0% 3%;
+    h1{
+      font-size: 40px;
+      font-weight: 800;
+      float: left;
+    }
+  }
+  #aval1{
+    display: flex;
+    align-items: center;
+    img{
+      margin-left: 1%;
+    }
+  }
+  .grazi,.francisco{
+    text-align: left;
+    img{
+      float: left;
+      margin-right: 2%;
+    }
+    h2{
+      width: 100%;
+    }
+    p{
+      clear: both;
+      left: 8.5%;
+      font-size: 32px;
+      font-weight: 400;
+      width: 80%;
+    }
+  }
+  #review2 {
+    h2{
+      margin: 5% 0% 0% 8.5%;
+      font-size: 28px;
+      font-weight: 800;
+      line-height: normal;
+    }
+    textarea{
+      width: 85%;
+      border: black 2px solid;
+      margin: 2% 0% 0% 0%;
+      height: 200px;
+      border-radius: 24px;
+      font-size: 28px;
+      font-weight: 400;
+      margin-bottom: 2%;
+      background-color: #FEFADC;
+    }
+  }
+  #avalie{
+    margin: 0%  0% 3% 70%;
+    width: 260px;
+    height: 76px;
+    color: white;
+    border-radius: 36px;
+    font-size: 28px;
+    font-weight: 900;
+    background: var(--Primria, #669D31);
+  }
+  @media only screen and (min-width:1251px){
+    #teste{
+      bottom: 6em;
+    }
+  }
+  @media only screen and (max-width:1250px){
+    #carac{
+      div{
+        width: 35%;
+      }
+    }
+    #p1,#p2{
+      margin-top: 5%;
+    }
+    #fundo{
+      width: 80%;
+    }
+    #form{
+      width: 80%;
+      left: 6%;
+      h1{
+        font-size: 6vw;
+        margin-top: 5px;
+        margin-bottom: 5%;
+      }
+      p{
+        font-size: 2vw;
+      }
+      div{
+        font-size: 2vw;
+      }
+    }
+    #teste{
+      bottom: 4em;
+      white-space: nowrap;
+      margin-bottom: 10%;
+      top: 50px;
+      h1{
+        font-size: 5vw;
+      }
+    }
+  }
