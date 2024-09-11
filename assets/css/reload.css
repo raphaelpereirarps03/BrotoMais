@@ -15,7 +15,8 @@ body{
     height: 1050px;
     transform: rotate(0deg);
     left: 718px;
-    z-index: -1;;
+    z-index: -1;
+    position: absolute;
 }
 
 #conteudo{
@@ -24,6 +25,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: absolute;
 }
 
 img{
