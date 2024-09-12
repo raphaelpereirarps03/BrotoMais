@@ -34,7 +34,6 @@ body{
     overflow-x: hidden;
     background-color: var(--cor-secundaria-begeClaro) !important;
 }
-
 .home{
     width: 100%;
     height: auto;
