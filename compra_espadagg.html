@@ -33,7 +33,7 @@
 
     <link rel="stylesheet" href="assets/css/base.css" type="text/css">
     <link rel="stylesheet" href="assets/css/venda.css" type="text/css">
-    <title>Lírio da paz</title>
+    <title>Espada de São jorge</title>
 </head>
 <body>
     <main>
@@ -93,22 +93,21 @@
 
     <!-- Imagem da planta-->
         <section class="animado" id="fundo">
-            <div id="lirio"><img src="assets/imgs/liriovenda.png"></div>
+            <div id="espada"><img src="assets/imgs/espada de são jorge.png"></div>
         </section>
 
         <!--Compra-->
 
         <section class="animado" id="form">
             <div id="texto" class="animado">
-                <h1>Lírio da Paz</h1>
+                <h1>Espada de São Jorge</h1>
                 <div id="texto_inside" class="animado">
                     <div id="luz">Luz Indireta</div>
                     <div id="elegante">Elegante</div>
-                    <div id="rega">Rega Moderada</div>
                 </div>
-                <h2>R$32,90</h2>
+                <h2>R$52,90</h2>
             </div>
-            <aside>
+            <aside id="aside1">
                 <div id="qnt" class="animado">
                     <input type="text" name="quantidade" maxlength="2" size="2" required placeholder="1" >
                 </div>
@@ -133,21 +132,17 @@
             <div tabindex="0" id="descricao" onclick="show_camada1()">Descrição <hr></div>
             <div tabindex="0" id="cuidados" onclick="show_camada2()">Cuidados <hr></div>
                 <p id="p1">
-                    O lírio da paz, ou Spathiphyllum,
-                    destaca-se por suas folhas verde-escuras e brilhantes
-                    , combinadas com flores brancas elegantes que têm uma
-                    forma semelhante a lírios. Suas flores, frequentemente
-                    compostas por uma espata branca e um espádice central,
-                    criam um contraste sofisticado e atraente contra o verde
-                    profundo das folhas. A planta adiciona um toque de
-                    frescor e serenidade a qualquer ambiente.
+                    A Espada-de-São-Jorge (Sansevieria trifasciata) é uma planta de interior popular
+                    por suas folhas longas, rígidas e verticais, com coloração verde-escura e listras
+                    horizontais esverdeadas ou amareladas nas bordas, formando uma roseta. Conhecida
+                    por sua resistência e fácil manutenção, é valorizada tanto pela estética quanto
+                    por suas propriedades de purificação do ar.
                 </p>
                 <p id="p2">
-                    O lírio da paz prefere luz indireta, solo úmido sem encharcar
-                    e ambientes com umidade. Regue uma ou duas vezes por semana,
-                    evite correntes de ar frio, e mantenha a temperatura entre 18°C
-                    e 26°C. Fertilize mensalmente na primavera e verão, e remova folhas
-                    danificadas. Plante em solo bem drenado e use vasos com boa drenagem.
+                    Ela se adapta a diferentes níveis de luz, desde luz indireta até ambientes com pouca
+                    luminosidade. A rega deve ser esparsa, geralmente a cada duas a três semanas, deixando
+                    o solo secar completamente entre as regas. A Espada-de-São-Jorge tolera ambientes secos
+                    e prefere solo bem drenado, como o usado para cactos e suculentas.
                 </p>
         </section>
         <hr id="linha">
@@ -281,16 +276,15 @@
         </div>
     </footer>
     <!-- Fim Footer -->
-
-    <!--MODAL-->
+     <!--MODAL-->
     <div id="fundo_escuro">
         <section id="principal">
             <div id="titulo"><img src="assets/imgs/voltar_claro.png" alt="" onclick="fechar_modal()"><p>Carrinho</p></div>
             <section id="conteudo">
                 <div id="topo">
-                    <img src="assets/imgs/Planta_carrinho.png" alt="">
+                    <img src="assets/imgs/espada_venda.png" alt="">
                     <div>
-                        <p>Lírio da paz <br> R$32,90</p>
+                        <p>Espada de São Jorge <br> R$52,90</p>
                         <input type="number" required placeholder="    1">
                     </div>
                 </div>
@@ -306,7 +300,7 @@
                 <div id="final">
                     <div>
                         <h2>TOTAL</h2>
-                        <p>R$ 45,80</p>
+                        <p>R$ 65,80</p>
                     </div>
                     <a href="#" id="a_modal">Comprar</a>
                 </div>
@@ -316,8 +310,6 @@
 
     </section>
     <!--FIM MODAL-->
-
-    </main>
 
     <!--V libras-->
     <div vw class="enabled">
@@ -331,7 +323,9 @@
         new window.VLibras.Widget('https://vlibras.gov.br/app');
     </script>
     <!--Final V libras-->
+
     
+    </main>
      <!-- Linkando JS do MD Bootstrap -->
      <script type="text/javascript"
      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.3.2/mdb.umd.min.js"></script>

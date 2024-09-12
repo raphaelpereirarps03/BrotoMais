@@ -30,7 +30,7 @@
     float: left;
   }
   /*Fotos multi arquivos*/
-  #lirio,#orbifolia,#cactus,#espada,#limao{
+  #lirio,#areca,#cactus,#espada,#limao{
     bottom: 100%;
   }
   /* Lírio */
@@ -40,17 +40,19 @@
       width: 1300px;
   }
   }
-  /*orbifolia*/
-  #orbifolia{
+  /*areca*/
+  #areca{
     img{
-      width: 900px;
+      width: 400px;
+      top: 400px;
       left: 0%;
     }
   }
   /*cactus*/
   #cactus{
     img{
-      width: 1150px;
+      top: 430px;
+      width: 500px;
     }
   }
   /*Espada*/
@@ -59,6 +61,36 @@
     img{
       width: 600px;
       right: 15%;
+    }
+  }
+  /*comigo ninguem pode*/
+  #comigo{
+    bottom: 50%;
+    img{
+      width: 700px;
+    }
+  }
+  /*Asplênio*/
+  #asplenio{
+    bottom: 50%;
+    img{
+      width: 700px;
+    }
+  }
+   /*Peperômia Melância*/
+   #peperomia{
+    bottom: 50%;
+    img{
+      top: 120px;
+      width: 800px;
+    }
+  }
+  /*Samanbaia*/
+  #samambaia{
+    bottom: 50%;
+    img{
+      width: 1000px;
+      top: 80px;
     }
   }
   /*Limão*/
