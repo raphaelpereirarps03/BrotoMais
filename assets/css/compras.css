@@ -30,6 +30,7 @@
 }
 main{
     background-color: var(--cor-secundaria-begeClaro);
+    margin-top: 100px;
 }
 
 header{

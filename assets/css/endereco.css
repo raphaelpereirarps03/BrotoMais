@@ -20,6 +20,9 @@
     justify-content: center;
     margin: auto;
   }
+  main{
+    margin-top: 150px;
+}
   
   .row-cards {
     width: 100%;

@@ -33,3 +33,6 @@ body {
     font: 5rem;
     color: #FEFADC;
 }
+li a{
+    text-decoration: none;
+}

@@ -56,44 +56,50 @@
 <body>
 
 
+    <!--Navbar -->
     <nav class="navbar navbar-expand-lg fixed-top pt-4 p-3">
         <div class="container-fluid">
-            <a class="navbar-brand me-auto" href="index.html"><img src="./assets/imgs/brotoMaisLogo.png"
+            <a class="navbar-brand me-auto" href="index.html"><img src="assets/imgs/brotoMaisLogo.png"
                     class="logoBroto" alt="Logo Broto Mais"></a>
+
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
                 aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
-                    <a href="index.html"><img src="./assets/imgs/brotoMaisLogo.png" class="logoBroto"
+                    <a href="index.html"><img src="assets/imgs/Broto+.png" class="logoBroto"
                             alt="Logo Broto Mais"></a>
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-center flex-grow-1 gap-5">
                         <li class="nav-item">
-                            <a class="nav-inicio active fw-bold" aria-current="page" href="index.html">Home</a>
+                            <a class="nav-links fw-bold" href="index.html">Início</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-links fw-bold " href="./sobre.html">Sobre nós</a>
+                            <a class="nav-links fw-bold active" aria-current="page" href="sobre.html">Sobre nós</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-links fw-bold " href="planos.html">Planos</a>
+                            <a class="nav-links fw-bold" href="planos.html">Planos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-links fw-bold " href="./loja.html">Nossa Loja</a>
+                            <a class="nav-inicio fw-bold" href="loja.html">Nossa Loja</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-links fw-bold" href="./cadastro.html">Seja um parceiro</a>
+                            <a class="nav-links fw-bold" href="login.html">Seja um parceiro</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-links fw-bold " href="#footer">Fale conosco</a>
+                            <a class="nav-links fw-bold" href="#footer">Fale conosco</a>
                         </li>
+
+
                     </ul>
+
                 </div>
             </div>
             <div class="iconsNav">
                 <a href="#"><i class="fa-solid fa-magnifying-glass mx-3 fa-lg" style="color: #fff;"></i></a>
-                <a href="#"><i class="fa-solid fa-basket-shopping mx-3 fa-lg" style="color: #fff;"></i></a>
-                <a href="./perfilUsuario.html"><i class="fa-regular fa-user mx-3 fa-lg" style="color: #fff;"></i></a>
+                <a href="#" onclick="abrir_modal2()"><i class="fa-solid fa-basket-shopping mx-3 fa-lg" style="color: #fff;"></i></a>
+                <a href="./perfilUsuario.html"><i class="fa-solid fa-user mx-3 fa-lg" style="color: #fff;"></i></a>
+                <a href="./perfilVend.html"><i class="fa-solid fa-shop mx-3 fa-lg" style="color: #fff;"></i></a>
             </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
                 aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -101,6 +107,7 @@
             </button>
         </div>
     </nav>
+    <!-- Fim Navbar -->
 
     <main>
         <div class="container px-4 py-5 mt-5" id="custom-cards">
@@ -231,7 +238,7 @@
                             style="background-image: url('./assets/imgs/samambaia.png');">
                             <div class="box">
                                 <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1 overlay">
-                                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"> Samambaia </h3>
+                                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"> Samambaia Americana </h3>
                                     <ul class="d-flex list-unstyled mt-auto">
                                         <li class="me-auto">
                                             <a href="./compra_samambaia.html"><button type="button" class="btn btn-success">Comprar</button></a>
