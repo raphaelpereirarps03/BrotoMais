@@ -61,6 +61,7 @@ p{
     }
 }
 #frete{
+    margin-top: 10px;
     border-top: #000 2px solid;
     width: 80%;
     display: flex;
