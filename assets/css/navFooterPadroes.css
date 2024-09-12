@@ -705,7 +705,7 @@ body{
     font-family: var(--fonte-principal-conteudo);
 }
 
-.footer{
+footer{
     background-color: var(--cor-primaria-laranja);
     color: var(--cor-secundaria-begeClaro);
     font-weight: bold;
@@ -713,7 +713,7 @@ body{
     overflow-x: hidden;
 }
 
-.footer .nav-link, ul, li{
+footer .nav-link, ul, li{
    color: var(--cor-secundaria-begeClaro);
    font-size: 1.1rem;
    font-weight: normal;
