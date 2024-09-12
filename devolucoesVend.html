@@ -4,13 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alterar Senha|Perfil Usuário - Broto+</title>
+    <title>Trocas e Devoluções|Perfil Vendedor - Broto+</title>
 
     <!-- Adiciona icone na aba do navegador-->
-    <link rel="shortcut icon" type="imagex/png" href="./assets/imgs/icons/brotoMaisIcon.png">
+    <link rel="shortcut icon" type="imagex/png" href="../../assets/imgs/icons/brotoMaisIcon.png">
 
     <!-- Linkando CSS's personalizados-->
-    <link rel="stylesheet" href="./assets/css/senha.css">
+
+    <link rel="stylesheet" href="./assets/css/devolucoes.css">
     <link rel="stylesheet" href="./assets/css/navFooterPadroes.css">
 
     <!-- Linkando bootstrap-->
@@ -43,37 +44,37 @@
 
 <body>
     <!--Navbar -->
-    <nav class="navbar navbar-expand-lg mb-5 ">
+    <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand me-auto" href="index.html"><img src="./assets/imgs/brotoMaisLogoLaranja.png"
+            <a class="navbar-brand me-auto" href="index.html"><img src="../../assets/imgs/brotoMaisLogoLaranja.png"
                     class="logoBroto" alt="Logo Broto Mais"></a>
 
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
                 aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
-                    <a href="index.html"><img src="./assets/imgs/brotoMaisLogoLaranja.png" class="logoBroto"
+                    <a href="index.html"><img src="../../assets/imgs/brotoMaisLogoLaranja.png" class="logoBroto"
                             alt="Logo Broto Mais"></a>
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
                         <li class="nav-item">
-                            <a class="nav-link  fw-bold" aria-current="page" href="index.html">Início</a>
+                            <a class="nav-link active fw-bold" aria-current="page" href="index.html">Início</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fw-bold mx-lg-2" href="./sobre.html">Sobre nós</a>
+                            <a class="nav-link fw-bold mx-lg-2" href="#">Sobre nós</a>
+                        </li>
+                        <li class="nav-item"></li>
+                        <a class="nav-link fw-bold mx-lg-2" href="planos.html">Planos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fw-bold mx-lg-2" href="./planos.html">Planos</a>
+                            <a class="nav-link fw-bold mx-lg-2" href="#">Nossa Loja</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fw-bold mx-lg-2" href="./loja.html">Nossa Loja</a>
+                            <a class="nav-link fw-bold mx-lg-2" href="#">Seja um parceiro</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fw-bold mx-lg-2" href="./cadastro.html">Seja um parceiro</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link fw-bold mx-lg-2" href="#footer">Fale conosco</a>
+                            <a class="nav-link fw-bold mx-lg-2" href="#">Fale conosco</a>
                         </li>
 
 
@@ -81,11 +82,11 @@
 
                 </div>
             </div>
-            <div class="iconsNav">
+           <div class="iconsNav">
                 <a href="#"><i class="fa-solid fa-magnifying-glass mx-3 fa-lg" style="color: #2D2C2C;"></i></a>
                 <a href="#"><i class="fa-solid fa-basket-shopping mx-3 fa-lg" style="color: #2D2C2C;"></i></a>
                 <a href="./perfilUsuario.html"><i class="fa-solid fa-user mx-3 fa-lg" style="color: #2D2C2C;"></i></a>
-                 <a href="./perfilVend.html"><i class="fa-solid fa-shop mx-3 fa-lg" style="color: #2D2C2C;"></i></a>
+                <a href="./perfilVend.html"><i class="fa-solid fa-shop mx-3 fa-lg" style="color: #2D2C2C;"></i></a>
             </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
                 aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -101,41 +102,33 @@
     <main class="mt-5">
         <div class="container mt-5">
             <div class="row row-cards mt-5">
-                <div class="card mb-5 col-lg-4 col-md-12"
+                <div class="card mb-5 col-lg-4 col-md-12" 
                     style="width: 23rem; height: 51.25rem; border-radius: 20px; background-color: #fefadc; border: 2px #2D2C2C solid;"
                     color>
                     <div class="card-body flex-colum ">
-                        <a href="./perfilUsuario.html">
-                            <div class="row card-item-plano mb-3"
+                        <a href="./perfilVend.html">
+                            <div class="row card-item-plano mb-3" 
                                 style="border: 2px #2D2C2C solid; margin: auto; width: 90%; border-radius: 10px; padding: 5px;" onclick="selecionado()">
                                 <div style="display: flex; align-items: center; width: 100%; justify-content: flex-start;">
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960"
-                                        width="40px" fill="#2D2C2C">
-                                        <path
-                                            d="M479.97-484.09q-68.98 0-114.49-45.51-45.51-45.51-45.51-114.49 0-68.98 45.51-114.48t114.49-45.5q68.98 0 114.6 45.5 45.62 45.5 45.62 114.48T594.57-529.6q-45.62 45.51-114.6 45.51ZM153.3-149.88v-107.14q0-38.44 19.53-67.56 19.52-29.11 50.89-44.29 65.89-30.57 129.01-45.9 63.12-15.32 127.23-15.32 64.56 0 127.32 15.62 62.76 15.62 128.28 45.65 32.28 15.05 51.79 44.08 19.51 29.03 19.51 67.68v107.18H153.3Zm75.76-75.75h501.88v-30.38q0-14.16-8.16-26.68-8.17-12.52-20.5-18.77-59.56-28.87-112.58-40.79-53.03-11.93-109.78-11.93-56.27 0-110.28 11.93-54.02 11.92-112.51 40.77-12.41 6.25-20.24 18.78-7.83 12.52-7.83 26.69v30.38Zm250.9-334.22q36 0 60.16-24.13 24.16-24.12 24.16-60.13 0-36.08-24.13-60.14-24.12-24.07-60.11-24.07-36 0-60.16 24.09-24.16 24.08-24.16 60.03 0 36.05 24.13 60.2 24.12 24.15 60.11 24.15Zm.04-84.27Zm0 418.49Z" />
-                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#2D2C2C"><path d="M840.33-518.67v332q0 27-19.83 46.84Q800.67-120 773.67-120H186.33q-27 0-46.83-19.83-19.83-19.84-19.83-46.84v-332q-26.34-23-36.5-57.33-10.17-34.33 1.16-70.67L127-782q8-26.67 28.17-42.33Q175.33-840 201.67-840h554q27.66 0 48.33 15.83 20.67 15.84 29 42.17l43.33 135.33q11.34 36.34.84 70.34t-36.84 57.66Zm-270.66-34.66q28.33 0 46.33-18.84 18-18.83 14.33-44.5l-24-156.66h-92.66V-614q0 24.33 16 42.5t40 18.17Zm-184.67 0q26.33 0 44.17-17.84Q447-589 447-614v-159.33h-92.67l-24 156.66q-4 25.34 12.84 44.34 16.83 19 41.83 19Zm-180.67 0q22 0 38.17-15.34 16.17-15.33 19.17-38l24.66-166.66h-92.66l-44 142q-8.67 27.33 7.5 52.66 16.16 25.34 47.16 25.34Zm551.34 0q31 0 47.66-25 16.67-25 7.67-53l-44.67-142h-92L699-606.67q3 22.67 19.17 38 16.16 15.34 37.5 15.34ZM186.33-186.67h587.34V-488q-1 1.33-6.5 1.33h-11.5q-25.67 0-47.5-10-21.84-10-43.17-31.33-16.67 19.33-40.33 30.33-23.67 11-51.67 11-29 0-51.17-9-22.16-9-41.5-28.33-15.66 18-38.5 27.67-22.83 9.66-50.83 9.66-30.33 0-54.17-10.66Q313-508 295.67-528q-23 21-45.17 31.17-22.17 10.16-46.17 10.16h-10.5q-5.16 0-7.5-1.33v301.33Zm587.34 0H186.33h587.34Z"/></svg>
                                     <p class="fw-normal"
                                         style="margin-left: 10px; margin-bottom: 0; font-size: 1.4em; color: #2D2C2C;">Minha
                                         conta</p>
                                 </div>
                             </div>
                         </a>
-                        <a href="./pedidos.html">
+                        <a href="./pedidosVend.html">
                             <div class="row card-item-plano mb-3"
                                 style="border: 2px #2D2C2C solid; margin: auto; width: 90%; border-radius: 10px; padding: 5px;">
                                 <div style="display: flex; align-items: center; width: 100%; justify-content: flex-start;">
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960"
-                                        width="40px" fill="#2D2C2C">
-                                        <path
-                                            d="m435.33-249.76 230.16-230.31-47.25-47.25-183 183-96.91-96.9-47.15 47.15 144.15 144.31ZM229.06-73.3q-31 0-53.38-22.38-22.38-22.38-22.38-53.38v-661.88q0-31.06 22.38-53.49 22.38-22.43 53.38-22.43h347.81l229.99 229.99v507.81q0 31-22.43 53.38Q762-73.3 730.94-73.3H229.06Zm309.22-546.98v-190.66H229.06v661.88h501.88v-471.22H538.28ZM229.06-810.94v190.66-190.66 661.88-661.88Z" />
-                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#2D2C2C"><path d="M546.67-426.67q-50 0-85-35t-35-85q0-50 35-85t85-35q50 0 85 35t35 85q0 50-35 85t-85 35ZM240-293.33q-27.5 0-47.08-19.59-19.59-19.58-19.59-47.08v-373.33q0-27.5 19.59-47.09Q212.5-800 240-800h613.33q27.5 0 47.09 19.58Q920-760.83 920-733.33V-360q0 27.5-19.58 47.08-19.59 19.59-47.09 19.59H240ZM333.33-360H760q0-39 27.17-66.17 27.16-27.16 66.16-27.16V-640q-39 0-66.16-27.17Q760-694.33 760-733.33H333.33q0 39-27.16 66.16Q279-640 240-640v186.67q39 0 66.17 27.16Q333.33-399 333.33-360ZM800-160H106.67q-27.5 0-47.09-19.58Q40-199.17 40-226.67V-680h66.67v453.33H800V-160ZM240-360v-373.33V-360Z"/></svg>
                                     <p class="fw-normal"
                                         style="margin-left: 10px; margin-bottom: 0; font-size: 1.4em; color: #2D2C2C;">Meus
                                         pedidos</p>
                                 </div>
                             </div>
                         </a>
-                        <a href="./endereco.html">
+                        <a href="./enderecoVend.html">
                             <div class="row card-item-plano mb-3"
                                 style="border: 2px #2D2C2C solid; margin: auto; width: 90%; border-radius: 10px; padding: 5px;">
                                 <div style="display: flex; align-items: center; width: 100%; justify-content: flex-start;">
@@ -150,8 +143,9 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="./devolucoes.html">
-                            <div class="row card-item-plano mb-3"
+
+                        <a href="./devolucoesVend.html">
+                            <div class="row card-item-plano mb-3" id="minhasDevolucoes"
                                 style="border: 2px #2D2C2C solid; margin: auto; width: 90%; border-radius: 10px; padding: 5px;">
                                 <div style="display: flex; align-items: center; width: 100%; justify-content: flex-start;">
                                     <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960"
@@ -166,8 +160,8 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="./alterar.html">
-                            <div class="row card-item-plano mb-3" id="minhaSenha"
+                        <a href="./alterarVend.html">
+                            <div class="row card-item-plano mb-3"
                                 style="border: 2px #2D2C2C solid; margin: auto; width: 90%; border-radius: 10px; padding: 5px;">
                                 <div style="display: flex; align-items: center; width: 100%; justify-content: flex-start;">
                                     <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960"
@@ -226,30 +220,71 @@
                     <div class="card card-infos p-0"
                         style="height: 713px; border-radius: 20px; background-color: #fefacd; border: 2px #2D2C2C solid ; ">
 
-                        <form action="">
-                            <label for="">Senha atual:</label>
-                            <input type="password">
+                        <div>
 
-                            <label for="">Senha Nova:</label>
-                            <input type="password">
+                            <div class="linha1-flores">
 
-                            <label for="">Confirme a senha nova:</label>
-                            <input type="password">
+                                <div class="img-background1">
 
-                            <button type="button">
-                                Trocar Senha
-                            </button>
-                        </form>
+                                    <img src="../../assets/imgs/melacia.png" alt="pedidoPlanta" class="img-fluid mb-3"
+                                        style="max-width: 75%; border-radius: 15px; ">
+                                    <p>Peperômia
+                                        Melância</p>
+                                    <p>R$ 54,90</p>
+                                    <p class="troca-verde mt-3">Troca</p>
+                                </div>
+                                <div class="img-background2">
+
+                                    <img src="../../assets/imgs/pexels-jonathanborba-2922353-ai-brush-removebg-p-9-rpettp-1.png"
+                                        alt="pedidoPlanta" class="img-fluid mb-3"
+                                        style="max-width: 75%; border-radius: 15px; ">
+                                    <p>Espada de
+                                        São Jorge</p>
+                                    <p>R$ 32,90</p>
+                                    <p class="troca-verde">Troca</p>
+
+                                </div>
 
 
+                            </div>
+
+                            <div class="linha2-flores">
+
+                                <div class="img-background4">
+
+                                    <img src="../../assets/imgs/perfil-projeto-remover-fundo-31.png" alt="pedidoPlanta"
+                                        class="img-fluid mb-3" style="max-width: 75%; border-radius: 15px; ">
+                                    <p>Orquídea
+                                        Phalaenopsis</p>
+                                    <p>R$ 54,90</p>
+                                    <p class="devolucao mt-5">Devol</p>
+
+                                </div>
+                                <div class="img-background5">
+
+                                    <img src="../../assets/imgs/projeto-remover-fundo-22.png" alt="pedidoPlanta"
+                                        class="img-fluid mb-3" style="max-width: 75%; border-radius: 15px; ">
+                                    <p>Lírio da paz</p>
+                                    <p>R$ 32,90</p>
+                                    <p class="devolucao">Devol</p>
+                                </div>
 
 
+                            </div>
+                        </div>
 
 
                     </div>
-
                 </div>
+
+
+
             </div>
+
+
+
+        </div>
+        </div>
         </div>
     </main>
     <!--Fim Main - Cards -->
@@ -260,86 +295,6 @@
 
 
 
-    <!--Footer -->
-
-    <a id="footer" name="footer"></a>
-    <footer class="row p-4 d-flex justify-content-between row-cols-md-5 py-5 my-5 ">
-        <div class="col mb-3">
-            <a href="index.html" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
-                <img src="./assets/imgs/brotoMaisLogo.png" class="logoBroto" alt="Logo Broto Mais">
-            </a>
-            <p>Do pequeno produtor, para a sua casa</p>
-        </div>
-
-
-
-        <div class="col mb-3 ">
-            <h5 class="mb-4 fw-bold">Sobre a Broto+</h5>
-            <ul class="nav flex-column">
-                <li class="nav-item mb-4"><a href="#" class="nav-link p-0 ">Quem somos</a></li>
-                <li class="nav-item mb-4"><a href="#" class="nav-link p-0 ">Seja um parceiro</a></li>
-                <li class="nav-item mb-4"><a href="#" class="nav-link p-0 ">Nossa loja</a></li>
-                <li class="nav-item mb-4"><a href="#" class="nav-link p-0 ">Planos</a></li>
-
-            </ul>
-        </div>
-
-        <div class="col mb-3">
-            <h5 class="mb-4 fw-bold">Entre em contato </h5>
-            <ul class="nav flex-column">
-                <li class="nav-item mb-1">Telefone: </li>
-                <li class="nav-item mb-1"><a href="#" class="nav-link p-0 ">(11) 2632-4489</a></li>
-                <li class="nav-item mb-4"><a href="#" class="nav-link p-0 ">(11) 1028-5678</a></li>
-
-                <li class="nav-item mb-1">Email: </li>
-                <li class="nav-item mb-4"><a href="#" class="nav-link p-0 ">brotomais@gmail.com.br</a></li>
-
-                <li class="nav-item mb-1">Endereço: </li>
-                <li class="nav-item mb-4"><a href="#" class="nav-link p-0 ">Rua tito, 54 - Lapa,SP</a></li>
-            </ul>
-        </div>
-
-        <div class="col mb-3">
-            <h5 class="fw-bold">Redes Sociais</h5>
-            <ul class="nav flex-column">
-                <ul class="nav flex-row mb-4">
-                    <li class="nav-item mb-2 me-3"><a href="#" class="nav-link p-0"><i
-                                class="fa-brands fa-instagram fa-2xl" style="color: #FEFADC;"></i></a></li>
-                    <li class="nav-item mb-2 me-3"><a href="#" class="nav-link p-0"><i
-                                class="fa-brands fa-facebook fa-2xl" style="color: #FEFADC;"></i></a></li>
-                    <li class="nav-item mb-2 me-3"><a href="#" class="nav-link p-0"><i
-                                class="fa-brands fa-whatsapp fa-2xl" style="color: #FEFADC;"></i></a></li>
-                    <li class="nav-item mb-2 me-3"><a href="#" class="nav-link p-0"><i
-                                class="fa-brands fa-youtube fa-2xl" style="color: #FEFADC;"></i></a></li>
-                </ul>
-                <h5 class="fw-bold">Formas de pagamento</h5>
-                <ul class="nav flex-row mb-4">
-                    <li class="nav-item mb-2 me-3"><a href="#" class="nav-link p-0"><img
-                                src="./assets/imgs/icons/mastercad.png" alt="" style="height: 30px; width: 60px;"></a>
-                    </li>
-                    <li class="nav-item mb-2 me-3"><a href="#" class="nav-link p-0"><img
-                                src="./assets/imgs/icons/visa.png" alt="" style="height: 30px; width: 60px;"></a></li>
-                    <li class="nav-item mb-2 me-3"><a href="#" class="nav-link p-0"><img
-                                src="./assets/imgs/icons/hipercard.png" alt="" style="height: 30px; width: 60px;"></a>
-                    </li>
-                </ul>
-                <ul class="nav flex-row mb-4">
-                    <li class="nav-item mb-2 me-3"><a href="#" class="nav-link p-0"><img
-                                src="./assets/imgs/icons/elo.png" alt="" style="height: 30px; width: 60px;"></a></li>
-                    <li class="nav-item mb-2 me-3"><a href="#" class="nav-link p-0"><img
-                                src="./assets/imgs/icons/barcode.png" alt="" style="height: 30px; width: 60px;"></a>
-                    </li>
-                    <li class="nav-item mb-2 me-3"><a href="#" class="nav-link p-0"><img
-                                src="./assets/imgs/icons/pix.png" alt="" style="height: 30px; width: 60px;"></a></li>
-
-                </ul>
-
-                <li class="nav-item mb-1">Prazo de entrega</li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0">3 à 5 dias úteis</a></li>
-
-            </ul>
-        </div>
-    </footer>
     <!-- Fim Footer -->
 
 
