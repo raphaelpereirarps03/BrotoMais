@@ -49,16 +49,10 @@
     margin-top: 0%;
 }
 
-.card-item-plano {
-    transition: 0.5s;
+.fw-bold {
+    color: var(--cor-secundaria-begeClaro);
 }
 
-.card-item-plano:hover {
-    border: none !important;
-    background-color: #0d48eb !important;
-    color: #FEFADC !important;
-    cursor: pointer;
-}
 
 .buttonQueroPlano .queroPlano {
     transition: 0.5s;
@@ -66,7 +60,7 @@
 }
 
 .buttonQueroPlano .queroPlano:hover {
-    background-color: #0d48eb !important;
+    background-color: #3b6d0c !important;
     color: #FEFADC !important;
 }
 
