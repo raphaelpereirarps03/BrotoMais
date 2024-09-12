@@ -1,0 +1,187 @@
+.equipe{
+    width: 100%;
+    height: 150vh;
+    background-color: var(--cor-secundaria-begeClaro);
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-grupo{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.container-grupo .texto-equipe{
+    font-family: var(--fonte-principal-conteudo);
+    font-size: 4rem;
+    color: var(--cor-primaria-verde);
+}
+
+.container-grupo .logo{
+    width: 300px;
+    height: 100px;
+    background-size: contain;
+    background-image: url(/assets/imgs/brotoMaiaLogoVerde.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container-grupo .equipe-texto{
+    width: 65%;
+    letter-spacing: 2px;
+    color: var(--cor-primaria-verde);
+    font-weight: normal;
+    font-size: 1.5rem;
+    padding-top: 10px;
+}
+
+.container-equipe{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row: 1fr 1fr 1fr;
+    height: 110vh;
+    width: 100%;
+    place-items: center;
+}
+
+.quadrado-fundo{
+    width: 400px;
+    height: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.quadrado-fundo .foto-pessoal{
+    width: 300px;
+    height: 270px;
+    background-color: var(--cor-primaria-verde);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.quadrado-fundo .foto-pessoal .raphael img{
+    width: 350px;
+    height: 350px;
+    position: relative;
+    object-fit: cover;
+    object-position: center;
+}
+.quadrado-fundo .foto-pessoal .bia{
+    background-image: url(/assets/imgs/lojas/02.png);
+    background-size: cover;
+    width: 350px;
+    background-repeat: no-repeat;
+    height: 350px;
+    position: relative;
+    bottom: 40px;
+}
+
+.quadrado-fundo .foto-pessoal .wesley{
+    background-image: url(/assets/imgs/grupo/wesley.png);
+    background-size: contain;
+    width: 350px;
+    background-repeat: no-repeat;
+    height: 350px;
+    position: relative;
+    bottom: 27px;
+}
+.quadrado-fundo-victor .foto-pessoal-victor .victor{
+    background-image: url(/assets/imgs/grupo/rapha.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 350px;
+    width: 350px;
+    position: relative;
+    bottom: 35px;
+}
+
+.quadrado-fundo-victor{
+    width: 400px;
+    height: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    top: 17px;
+}
+
+.foto-pessoal-victor{
+    width: 300px;
+    height: 270px;
+    background-color: var(--cor-primaria-verde);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.quadrado-fundo-victor .nomes{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+.quadrado-fundo-victor .nomes .nome{
+    color: var(--cor-primaria-verde);
+    font-weight: bold;
+    font-family: var(--fonte-principal-conteudo);
+    font-size: 2rem;
+}
+
+.quadrado-fundo-victor .nomes p{
+    width: 25rem;
+    font-size: 1.5rem;
+    font-weight: normal;
+    font-family: var(--fonte-principal-conteudo);
+}
+
+.quadrado-fundo .foto-pessoal .lucas{
+    background-image: url(/assets/imgs/grupo/lucas.png);
+    background-size: cover;
+    width: 100%;
+    background-repeat: no-repeat;
+    height: 400px;
+    position: relative;
+    bottom: 65px;
+}
+
+.quadrado-fundo .foto-pessoal .jesse{
+    background-image: url(/assets/imgs/grupo/rapha.png);
+    background-size: contain;
+    width: 350px;
+    background-repeat: no-repeat;
+    height: 350px;
+    position: relative;
+    bottom: 35px;
+}
+
+.quadrado-fundo .nomes{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.quadrado-fundo .nomes .nome{
+    color: var(--cor-primaria-verde);
+    font-weight: bold;
+    font-family: var(--fonte-principal-conteudo);
+    font-size: 2rem;
+}
+.quadrado-fundo .nomes p{
+    width: 25rem;
+    font-size: 1.5rem;
+    font-weight: normal;
+    font-family: var(--fonte-principal-conteudo);
+}

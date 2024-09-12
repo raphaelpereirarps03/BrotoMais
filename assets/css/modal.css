@@ -1,0 +1,121 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    font-family: var(--fonte-principal-conteudo);
+}
+
+#principal{
+    position: absolute;
+    top: 160px;
+    width: 750px;
+    height: 900px;
+    right: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 1;
+    visibility: hidden;
+}
+p{
+    color: var(--Secundria, #2D2C2C);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+#titulo{
+    width: 80%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    p{
+        top: 10px;
+        left: 15px;
+        color:#FEFADC;
+        text-align: center;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+}
+#conteudo{
+    background-color: #FEFADC;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 36px;
+    border: 2px solid var(--Secundria, #2D2C2C);
+}
+#topo{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    input{
+        text-align: center;
+        margin-right: 20px;
+    }
+}
+#frete{
+    margin-top: 10px;
+    border-top: #000 2px solid;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    p{
+        display: flex;
+        align-items: end;
+    }
+    label{
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
+input{
+    width: 70%;
+    border-radius: 16px;
+    border: 2px solid #000;
+    background-color: #FEFADC;
+    color: var(--Secundria, #2D2C2C);
+    font-size: 24px;
+    font-weight: 400;
+    padding: 7px;
+}
+#final{
+    margin-top: 150px;
+    border-top: #000 2px solid;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#a_modal{
+    text-decoration: none;
+    width: 35%;
+    height: 50px;
+    border-radius: 36px;
+    background: var(--Primria, #F58A07);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    color: #FEFADC;
+    font-size: 24px;
+}
+#fundo_escuro{
+    position: absolute;
+    width: 100%;
+    height: 2000px;
+    top: 0px;
+    backdrop-filter: blur(15px);
+    opacity: 0;
+    background-color:#2D2C2C;
+    visibility: hidden;
+}

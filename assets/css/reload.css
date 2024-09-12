@@ -1,0 +1,57 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+
+body{
+    background-image: url(assets/imgs/indoor-plants-studio.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+img{
+    position: absolute;
+}
+
+#icone{
+    width: 800px;
+    height: 1050px;
+    transform: rotate(0deg);
+    left: 718px;
+    z-index: -1;
+    position: absolute;
+}
+
+
+#conteudo{
+    margin-top: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    width: 303px;
+    height: 75px;
+}
+
+#retangulo{
+    top: 30px;
+    width: 550px;
+    height: 180px;
+    border-radius: 36px;
+    border: 1px solid #FEFADC;
+    background: rgba(254, 250, 220, 0.20);
+    backdrop-filter: blur(25px);
+    justify-content: center;
+}
+
+h1{
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 120px;
+    font-style: bold;
+    color: #FEFADC;
+}

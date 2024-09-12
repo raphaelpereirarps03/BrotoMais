@@ -1,0 +1,464 @@
+:root {
+  --cor-primaria-laranja: #f58a07;
+  --cor-primaria-verde: #669d31;
+  --cor-secundaria-amarela: #feea00;
+  --cor-secundaria-begeClaro: #fefadc;
+  --cor-secundaria-preto: #2d2c2c;
+  --fonte-logo: "Mochiy Pop One", sans-serif;
+  --fonte-principal-conteudo: "DM sans", sans-serif;
+}
+
+body{ 
+    background-color: var(--cor-secundaria-begeClaro) !important;
+}
+
+main {
+  color: var(--cor-secundaria-preto);
+  width: 80%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.row-cards {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.row-cards h4 {
+  margin-left: 5%;
+  font-weight: bolder;
+}
+
+#sideBar{
+    height:75.6vh !important;
+    width: 22.4vw !important;
+}
+
+.card-item-plano {
+    position: relative;
+    height: 8.8vh !important;
+    width: 20vw !important;
+    right: 10px;
+}
+
+.card-infos {
+  padding: 2%;
+  width: 100%;
+  margin-top: 0%;
+  margin-bottom: 1%;
+  flex-wrap: wrap;
+}
+
+.colunaCard {
+  border: 1px solid;
+}
+
+.subTitulosCards {
+  font-weight: bolder;
+}
+
+.textosCards {
+  font-weight: 500;
+}
+
+.img-background {
+  width: 210px;
+  height: 170px;
+  border-radius: 36px;
+  background: #f58a07;
+}
+
+.img-background img{
+    position: relative;
+    height: 30vh;
+    /* width: 500vw; */
+    bottom: 90px;
+    object-fit: cover;
+}
+
+#minhaConta{
+  background-color: #669d31 !important;
+}
+
+#minhaConta svg {
+  fill: #fefadc !important;
+}
+
+#minhaConta p {
+  color: #fefadc !important;
+}
+
+.textosCards,
+.subTitulosCards {
+  font-family: var(--fonte-principal-conteudo);
+  color: var(--cor-secundaria-preto);
+  font-size: 1.1em;
+}
+
+.card-item-plano:hover {
+  cursor: pointer;
+}
+
+
+
+#Confirmacao-modal{
+  background-color: #669d31 !important;
+  height: 10px !important;
+}
+
+
+
+@media only screen and (min-width: 320px) {
+
+  .iconsNav{
+    display: none;
+  }
+
+  main {
+    width: 100%;
+    margin: 0 10px !important;
+  }
+
+  #sideBar {
+    height: 80.6vh !important;
+    width: 100% !important;
+    padding-bottom: 20px !important;
+
+  }
+
+  .card-body {
+    width: 100% !important;
+    padding-top: 14px !important;
+  }
+
+  #minhaConta {
+    width: 100% !important;
+    background-color: #669d31 !important;
+  }
+
+  #meusPedidos{
+    width: 100% !important;
+  }
+
+  #meusEnderecos{
+    width: 100% !important;
+  }
+  #meusProdutos{
+    width: 100% !important;
+  }
+  #devolucoes{
+    width: 100% !important;
+  }
+
+  #senha{
+    width: 100% !important;
+  }
+
+  #sair{
+    width: 100% !important;
+  }
+
+  .img-background {
+    width: 140px;
+    height: 140px;
+  }
+
+  .img-background img{
+    height: 25vh;
+    bottom: 70px;
+}
+
+.textosCards, .subTitulosCards{
+  font-size: 0.9rem !important;
+  flex-wrap: wrap !important;
+  display: flex !important;
+    flex-direction: column;
+}
+}
+
+@media only screen and (max-width: 481px) {
+
+
+
+  main {
+    width: 100%;
+    margin: 0 10px !important;
+  }
+
+  #sideBar {
+    height:80.6vh !important;
+    width: 100% !important;
+    padding-bottom: 20px !important;
+  }
+
+  .card-body {
+    width: 100% !important;
+    padding-top: 14px !important;
+  }
+
+  #minhaConta {
+    width: 100% !important;
+  }
+
+  #meusPedidos{
+    width: 100% !important;
+  }
+
+  #meusEnderecos{
+    width: 100% !important;
+  }
+
+  #meusProdutos{
+    width: 100% !important;
+  }
+
+  #devolucoes{
+    width: 100% !important;
+  }
+  #senha{
+    width: 100% !important;
+  }
+
+  #sair{
+    width: 100% !important;
+  }
+}
+
+@media screen and (min-width: 790px) {
+
+  .iconsNav{
+    display: block;
+  }
+  main {
+    width: 100%;
+    margin: 0 10px !important;
+  }
+
+  #sideBar {
+    height: 91.6vh !important;
+    width: 50% !important;
+
+  }
+
+  .col-lg-8 {
+    width: 50% !important;
+  }
+
+  .textosCards, .subTitulosCards{
+    font-size: 1.1rem;
+   
+  }
+ 
+}
+
+
+@media screen and (min-width: 890px) {
+  main {
+    width: 100%;
+    margin: 0 10px !important;
+  }
+
+  #sideBar {
+    height: 82.6vh !important;
+    width: 50% !important;
+  }
+
+  .col-lg-8 {
+    width: 50% !important;
+  }
+
+
+}
+
+@media screen and (min-width: 950px) {
+  main {
+    width: 100%;
+    margin: 0 10px !important;
+  }
+
+  #sideBar {
+    height: 98.6vh !important;
+    width: 50% !important;
+  }
+
+
+  .img-background {
+    width: 210px;
+    height: 170px;
+  
+  }
+  
+  .img-background img{  
+      height: 35vh !important;
+      bottom: 100px !important;
+  }
+}
+
+
+
+
+
+@media screen and (min-width: 1024px) {
+  main {
+    width: 100%;
+    margin: 0 10px !important;
+  }
+
+  #sideBar {
+    height: 98.6vh !important;
+    width: 50% !important;
+  }
+
+
+  .img-background {
+    width: 210px;
+    height: 170px;
+  
+  }
+  
+  .img-background img{  
+      height: 30vh;
+      bottom: 100px;
+  }
+}
+
+
+@media screen and (min-width: 1128px) {
+  main {
+    width: 100%;
+    margin: 0 10px !important;
+  }
+
+  #sideBar {
+    height: 106.6vh !important;
+    width: 50% !important;
+  }
+
+  .img-background img{  
+    height: 35vh !important;
+    bottom: 100px;
+}
+
+}
+
+@media screen and (min-width: 1280px) {
+  main {
+    width: 100%;
+    margin: 0 10px !important;
+  }
+
+  #sideBar {
+    height: 73.6vh !important;
+    width: 50% !important;
+  }
+
+  .img-background img{  
+    height: 35vh !important;
+    bottom: 90px;
+}
+
+}
+
+@media screen and (min-width: 1330px) {
+  main {
+    width: 100%;
+    margin: 0 10px !important;
+  }
+
+  #sideBar {
+    height: 73.6vh !important;
+    width: 50% !important;
+  }
+
+  .img-background img{  
+    height: 35vh !important;
+    bottom: 90px;
+}
+
+}
+
+
+
+
+@media screen and (min-width: 1366px) {
+
+  #sideBar {
+    height: 80.6vh !important;
+    width: 50% !important;
+  }
+  
+  
+  .img-background img{ 
+     
+    height:35vh !important;
+    bottom: 90px ;
+}
+
+}
+
+@media screen and (min-width: 1440px) {
+
+  #sideBar {
+    height: 84.6vh !important;
+    width: 50% !important;
+  }
+
+  .img-background img{ 
+     
+    height: 34vh !important;
+    bottom: 80px !important;
+}
+
+}
+
+@media screen and (min-width: 1600px) {
+
+
+  .img-background img{  
+    height: 25vh !important;
+    bottom: 50px !important;
+}
+
+}
+
+
+
+@media screen and (min-width: 1680px) {
+
+  #sideBar {
+    height: 73.6vh !important;
+    width: 50% !important;
+  }
+}
+
+@media screen and (min-width: 1760px) {
+
+  #sideBar {
+    height: 75.6vh !important;
+    width: 50% !important;
+  }
+
+  .img-background {
+    width: 210px;
+    height: 170px;
+  
+  }
+  
+  .img-background img{  
+      height: 30vh !important;
+      bottom: 100px !important;
+  }
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,106 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    position: relative;
+    text-decoration: none;
+    color: black;
+    font-family: var(--fonte-principal-conteudo);
+  }
+#login_page{
+    background-color: #669D31;
+    width: 60%;
+    height: 720px;
+    margin: auto;
+    border-radius: 36px;
+    margin-top: 7%;
+    margin-bottom: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    img{
+      width: 138px;
+      margin: auto;
+    }
+  }
+  legend {
+    color: var(--Secundria, #FEFADC);
+    font-family: var(--fonte-logo);
+    font-size: 36px;
+    font-weight: 400;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  #login_form{
+    width: 80%;
+    top: 25px;
+  }
+  fieldset div{
+    margin-top: 5%;
+  }
+  .um{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  input {
+    padding: 25px 0px 25px 0px;
+    font-size: 24px;
+    border-radius: 36px;
+    background: var(--Secundria, #FEFADC);
+    width: 70%;
+  }
+  #enviar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    a{
+      color: #FEFADC;
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 800;
+      line-height: normal;
+      letter-spacing: 1.2px;
+    }
+  }
+  #enviar button {
+    width: 35%;
+    height: 60px;
+    border-radius: 36px;
+    background: var(--Primria, #F58A07);
+
+  }
+  p{
+    color: #FEFADC;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 1.2px;
+  }
+  #criar{
+    text-align: center;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.65px;
+    text-decoration-line: underline;
+    text-decoration: none;
+    a{
+      color: #FEFADC;
+      font-size: 20px;
+    }
+  }
+  @media only screen and (max-width:800px){
+    #login_page{
+      width: 90%;
+    }
+    #login_form{
+      width: 100%;
+    }
+  }

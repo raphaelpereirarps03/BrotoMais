@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Adiciona icone na aba do navegador-->
+    <link rel="shortcut icon" type="imagex/png" href="assets/imgs/icons/brotoMaisIcon.png">
+
+    <!-- Linkando bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Linkando GoogleIcons-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- Linkando Google Fonts (Mochiy Pop - Fonte da Logo)-->
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet">
+
+    <!-- Linkando Google Fonts (DM Sans - Fonte Principal, Conteúdo, Textos, títulos e etc.)-->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+
+    <!-- Linkando MD Bootstrap-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.3.2/mdb.min.css" rel="stylesheet" />
+
+    <!-- Animation -->
+    <link rel="stylesheet" href="assets/css/scroll.css">
+    <!-- Modal -->
+    <link rel="stylesheet" href="assets/css/modal.css">
+
+    <link rel="stylesheet" href="assets/css/base.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/venda.css" type="text/css">
+    <title>Cactus</title>
+</head>
+<body>
+    <main>
+
+         <!--Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand me-auto" href="index.html"><img src="assets/imgs/Broto+.png"
+                    class="logoBroto" alt="Logo Broto Mais"></a>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <a href="index.html"><img src="assets/imgs/Broto+.png" class="logoBroto"
+                            alt="Logo Broto Mais"></a>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold mx-lg-2" href="index.html">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold mx-lg-2" href="sobre.html">Sobre nós</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold mx-lg-2" href="planos.html">Planos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold active mx-lg-2" aria-current="page" href="#">Nossa Loja</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold mx-lg-2" href="login.html">Seja um parceiro</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold mx-lg-2" href="#footer">Fale conosco</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+            <div class="iconsNav">
+                <a href="#"><i class="fa-solid fa-magnifying-glass mx-3 fa-lg" style="color: #000000;"></i></a>
+                <a href="#" onclick="abrir_modal()"><i class="fa-solid fa-basket-shopping mx-3 fa-lg" style="color: #2D2C2C;"></i></a>
+                <a href="./perfilUsuario.html"><i class="fa-solid fa-user mx-3 fa-lg" style="color: #2D2C2C;"></i></a>
+                <a href="./perfilVend.html"><i class="fa-solid fa-shop mx-3 fa-lg" style="color: #2D2C2C;"></i></a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+    <!-- Fim Navbar -->
+
+    <!-- Imagem da planta-->
+        <section class="animado" id="fundo">
+            <div id="cactus"><img src="assets/imgs/cactusvenda.png"></div>
+        </section>
+
+        <!--Compra-->
+
+        <section class="animado" id="form">
+            <div id="texto" class="animado">
+                <h1>Cactus</h1>
+                <div id="texto_inside" class="animado">
+                    <div id="luz">Luz Direta</div>
+                    <div id="rega">Rega Baixa</div>
+                </div>
+                <h2>R$32,90</h2>
+            </div>
+            <aside>
+                <div id="qnt" class="animado">
+                    <input type="text" name="quantidade" maxlength="2" size="2" required placeholder="1" >
+                </div>
+                <a href="#" id="comprar" class="animado" onclick="abrir_modal()"><p>Comprar</p></a>
+            </aside>
+
+            <p id="calculo" class="animado">Calcule seu frete:</p>
+            <aside>
+                <div id="cep" class="animado">
+                    <input type="text" name="cep" maxlength="10" size="10" required placeholder="00000-000">
+                    <a href="#"><p>Calcular</p></a>
+                </div>
+            </aside>
+        </section>
+        <div id="teste" class="animado">
+            <h1>Do pequeno produtor, para o seu lar</h1>
+        </div>
+
+        <!--Informações-->
+
+        <section id="carac" class="animado">
+            <div tabindex="0" id="descricao" onclick="show_camada1()">Descrição <hr></div>
+            <div tabindex="0" id="cuidados" onclick="show_camada2()">Cuidados <hr></div>
+                <p id="p1">
+                    Os cactos são plantas suculentas conhecidas por sua aparência exótica e espinhosa,
+                    com corpos arredondados, cilíndricos ou colunados. Adaptados a ambientes áridos,
+                    apresentam caules espessos capazes de armazenar água, e as folhas, quando presentes,
+                    se transformam em espinhos para reduzir a perda de água. Essas plantas variam em
+                    tamanhos, de miniaturas a grandes espécimes, e podem exibir flores coloridas em
+                    épocas específicas.
+                </p>
+                <p id="p2">
+                    Cactos se desenvolvem bem sob luz solar direta e têm baixa necessidade de água.
+                    O solo deve ser bem drenado, evitando o acúmulo de umidade, e as regas devem ser
+                    espaçadas, permitindo que o solo seque completamente entre elas.
+                </p>
+        </section>
+        <hr id="linha">
+    
+        <!--Avaliações-->
+        <section id="review" class="animado">
+            <div id="aval1" class="animado">
+                <h1>Avaliações do Produto</h1>
+                <img src="assets/imgs/Group 32.png" alt="">
+            </div>
+
+            <div class="grazi animado">
+                <img src="assets/imgs/grazi.png">
+                <h2>Grazielli Santana</h2>
+                <img src="assets/imgs/Group 32.png" alt="">
+                <p id="p10">
+                    As plantas oferecidas são de excelente qualidade,
+                    com folhagem verde e saudável e flores vibrantes.
+                    A variedade é ampla, atendendo a diferentes
+                    preferências e necessidades.
+                </p>
+            </div>
+
+            <div class="francisco animado">
+                <img src="assets/imgs/fran.png" alt="">
+                <h2>Francisco moratto</h2>
+                <img src="assets/imgs/Group 32.png" alt="">
+                <p id="p10">
+                    Os arranjos e plantas recebidos são de alta qualidade,
+                    com flores frescas e bem cuidadas. A descrição dos
+                    produtos no site corresponde exatamente ao que é entregue.
+                </p>
+            </div>
+
+            <div class="grazi animado">
+                <img src="assets/imgs/graze.png">
+                <h2>Grazielli Santana</h2>
+                <img src="assets/imgs/Group 32.png" alt="">
+                <p id="p10">
+                    As plantas oferecidas são de excelente qualidade,
+                    com folhagem verde e saudável e flores vibrantes.
+                    A variedade é ampla, atendendo a diferentes
+                    preferências e necessidades.
+                </p>
+            </div>
+
+            <div class="francisco animado">
+                <img src="assets/imgs/frac.png" alt="">
+                <h2>Francisco moratto</h2>
+                <img src="assets/imgs/Group 32.png" alt="">
+                <p id="p10">
+                    Os arranjos e plantas recebidos são de alta qualidade,
+                    com flores frescas e bem cuidadas. A descrição dos
+                    produtos no site corresponde exatamente ao que é entregue.
+                </p>
+            </div>
+
+            <div id="review2" class="animado">
+                <h2>Deixe seu Comentário</h2>
+                <textarea name="avaliacao" placeholder=" Escreva aqui"></textarea>
+            </div>
+
+            <button id="avalie" class="animado">Avalie</button>
+        </section>
+
+
+         <!--Footer -->
+         <a id="footer" name="footer"></a>
+    <footer class="p-4 d-flex justify-content-between row-cols-md-5 py-5 my-5 ">
+        <div class="col mb-3">
+            <a href="index.html" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+                <img src="assets/imgs/brotoMaisLogo.png" class="logoBroto" alt="Logo Broto Mais">
+            </a>
+            <p>Do pequeno produtor, para a sua casa</p>
+        </div>
+
+
+
+        <div class="col mb-3 ">
+            <h5 class="mb-4 fw-bold">Sobre a Broto+</h5>
+            <ul class="nav flex-column">
+                <li class="nav-item mb-4"><a href="#" class="nav-link p-0 ">Quem somos</a></li>
+                <li class="nav-item mb-4"><a href="#" class="nav-link p-0 ">Seja um parceiro</a></li>
+                <li class="nav-item mb-4"><a href="#" class="nav-link p-0 ">Nossa loja</a></li>
+                <li class="nav-item mb-4"><a href="#" class="nav-link p-0 ">Planos</a></li>
+
+            </ul>
+        </div>
+
+        <div class="col mb-3">
+            <h5 class="mb-4 fw-bold">Entre em contato </h5>
+            <ul class="nav flex-column">
+                <li class="nav-item mb-1">Telefone: </li>
+                <li class="nav-item mb-1"><a href="#" class="nav-link p-0 ">(11) 2632-4489</a></li>
+                <li class="nav-item mb-4"><a href="#" class="nav-link p-0 ">(11) 1028-5678</a></li>
+                
+                <li class="nav-item mb-1">Email: </li>
+                <li class="nav-item mb-4"><a href="#" class="nav-link p-0 ">brotomais@gmail.com.br</a></li>
+
+                <li class="nav-item mb-1">Endereço: </li>
+                <li class="nav-item mb-4"><a href="#" class="nav-link p-0 ">Rua tito, 54 - Lapa,SP</a></li>
+            </ul>
+        </div>
+
+        <div class="col mb-3">
+            <h5 class="fw-bold">Redes Sociais</h5>
+            <ul class="nav flex-column">
+                <ul class="nav flex-row mb-4">
+                    <li class="nav-item mb-2 me-3"><a href="#" class="nav-link p-0"><i class="fa-brands fa-instagram fa-2xl" style="color: #FEFADC;"></i></a></li>
+                    <li class="nav-item mb-2 me-3"><a href="#" class="nav-link p-0"><i class="fa-brands fa-facebook fa-2xl" style="color: #FEFADC;"></i></a></li>
+                    <li class="nav-item mb-2 me-3"><a href="#" class="nav-link p-0"><i class="fa-brands fa-whatsapp fa-2xl" style="color: #FEFADC;"></i></a></li>
+                    <li class="nav-item mb-2 me-3"><a href="#" class="nav-link p-0"><i class="fa-brands fa-youtube fa-2xl" style="color: #FEFADC;"></i></a></li>
+                </ul>
+            <h5 class="fw-bold">Formas de pagamento</h5>
+            <ul class="nav flex-row mb-4">
+                <li class="nav-item mb-2 me-3"><a href="#" class="nav-link p-0"><img src="assets/imgs/icons/mastercad.png" alt="" style="height: 30px; width: 60px;"></a></li>
+                <li class="nav-item mb-2 me-3"><a href="#" class="nav-link p-0"><img src="assets/imgs/icons/visa.png" alt="" style="height: 30px; width: 60px;"></a></li>
+                <li class="nav-item mb-2 me-3"><a href="#" class="nav-link p-0"><img src="assets/imgs/icons/hipercard.png" alt="" style="height: 30px; width: 60px;"></a></li>
+            </ul>
+            <ul class="nav flex-row mb-4">
+                <li class="nav-item mb-2 me-3"><a href="#" class="nav-link p-0"><img src="assets/imgs/icons/elo.png" alt="" style="height: 30px; width: 60px;"></a></li>
+                <li class="nav-item mb-2 me-3"><a href="#" class="nav-link p-0"><img src="assets/imgs/icons/barcode.png" alt="" style="height: 30px; width: 60px;"></a></li>
+                <li class="nav-item mb-2 me-3"><a href="#" class="nav-link p-0"><img src="assets/imgs/icons/pix.png" alt="" style="height: 30px; width: 60px;"></a></li>
+
+            </ul>
+                
+                <li class="nav-item mb-1">Prazo de entrega</li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0">3 à 5 dias úteis</a></li>
+
+            </ul>
+        </div>
+    </footer>
+    <!-- Fim Footer -->
+     <!--MODAL-->
+    <div id="fundo_escuro">
+        <section id="principal">
+            <div id="titulo"><img src="assets/imgs/voltar_claro.png" alt="" onclick="fechar_modal()"><p>Carrinho</p></div>
+            <section id="conteudo">
+                <div id="topo">
+                    <img src="assets/imgs/cactus_venda.png" alt="">
+                    <div>
+                        <p>Cactus <br> R$32,90</p>
+                        <input type="number" required placeholder="    1">
+                    </div>
+                </div>
+                <div id="frete">
+                    <div>
+                        <label for="">Digite seu frete:</label>
+                        <br>
+                        <input type="text">
+                    </div>
+                    <p>R$ 12,90</p>
+                </div>
+        
+                <div id="final">
+                    <div>
+                        <h2>TOTAL</h2>
+                        <p>R$ 45,80</p>
+                    </div>
+                    <a href="#" id="a_modal">Comprar</a>
+                </div>
+        
+            </section>
+    </div>
+
+    </section>
+    <!--FIM MODAL-->
+
+    <!--V libras-->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    <!--Final V libras-->
+
+    
+    </main>
+     <!-- Linkando JS do MD Bootstrap -->
+     <script type="text/javascript"
+     src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.3.2/mdb.umd.min.js"></script>
+
+    <!-- Linkando JS do script do Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous">
+    </script>
+    <!--Sumir texto-->
+    <script src="assets/js/sumirtexto.js"></script>
+    <!--Animações-->
+    <script src="assets/js/scroll.js"></script>
+    <!--MODAL-->
+    <script src="assets/js/modal.js"></script>
+</body>
+</html>

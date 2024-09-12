@@ -1,0 +1,139 @@
+:root {
+  --cor-primaria-laranja: #f58a07;
+  --cor-primaria-verde: #669d31;
+  --cor-secundaria-amarela: #feea00;
+  --cor-secundaria-begeClaro: #fefadc;
+  --cor-secundaria-preto: #2d2c2c;
+  --fonte-logo: "Mochiy Pop One", sans-serif;
+  --fonte-principal-conteudo: "DM sans", sans-serif;
+}
+
+body {
+  background-color: var(--cor-secundaria-begeClaro) !important; 
+}
+
+main {
+  color: var(--cor-secundaria-preto);
+  width: 80%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 500px !important;
+}
+
+.row-cards {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.row-cards h4 {
+  margin-left: 5%;
+  font-weight: bolder;
+}
+
+
+
+/* .card-item-plano {
+  position: relative;
+  height: 8.8vh !important;
+  width: 20vw !important;
+  right: 10px;
+} */
+
+
+
+
+
+
+.card-infos {
+  padding: 2%;
+  width: 100%;
+  height: 80em !important;
+  margin-top: 0%;
+  margin-bottom: 1%;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.colunaCard {
+  border: 1px solid;
+}
+
+.subTitulosCards {
+  font-weight: bolder;
+}
+
+.textosCards {
+  font-weight: 500;
+}
+
+.img-background {
+  width: 226px;
+  height: 170px;
+  border-radius: 36px;
+  background: #f58a07;
+}
+
+.img-background img {
+  position: relative;
+  height: 30vh;
+  /* width: 500vw; */
+  bottom: 90px;
+  object-fit: cover;
+}
+
+#meusPedidos{
+  background-color: #669d31 !important;
+}
+
+#meusPedidos svg {
+  fill: #fefadc !important;
+}
+
+#meusPedidos p {
+  color: #fefadc !important;
+}
+
+
+.textosCards,
+.subTitulosCards {
+  font-family: var(--fonte-principal-conteudo);
+  color: var(--cor-secundaria-preto);
+  font-size: 1.1em;
+}
+
+.card-item-plano:hover {
+  cursor: pointer;
+}
+
+div .card-pedidos {
+  border: 1px var(--cor-secundaria-preto) solid;
+  height: auto;
+  background-color: var(--cor-secundaria-begeClaro);
+  width: 100%;
+}
+
+div .card-pedidos img{
+  max-height: 30vh;
+}
+
+
+div .card-chart {
+  border: 1px var(--cor-secundaria-preto) solid;
+  height: auto;
+  background-color: var(--cor-secundaria-begeClaro);
+  width: 100%;
+}
+
+footer {
+  display: flex;
+  margin-top: 50em;
+}
+
+
+
+

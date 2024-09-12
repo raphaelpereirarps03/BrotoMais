@@ -23,8 +23,46 @@
 
 }
 
-.card-body {
-    margin-top: 50%;
+
+
+
+.card {
+    transition: all 1.1s;
 }
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+
+.card .planosImgs {
+    max-width: 80%;
+    transition: all 1.1s;
+}
+
+.card:hover .planosImgs {
+    transform: scale(1.2);
+}
+
+
+.card-body {
+    margin-top: 0%;
+}
+
+.fw-bold {
+    color: var(--cor-secundaria-begeClaro);
+}
+
+
+.buttonQueroPlano .queroPlano {
+    transition: 0.5s;
+
+}
+
+.buttonQueroPlano .queroPlano:hover {
+    background-color: #3b6d0c !important;
+    color: #FEFADC !important;
+}
+
 
 

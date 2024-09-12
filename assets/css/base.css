@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+
+/*Variáveis padrões*/
+  :root{
+    --cor-primaria-laranja:#F58A07;
+    --cor-primaria-verde:#669D31;
+    --cor-secundaria-amarela:#FEEA00;
+    --cor-secundaria-begeClaro:#FEFADC;
+    --cor-secundaria-preto:#2D2C2C;
+    --fonte-logo:"Mochiy Pop One", sans-serif;
+    --fonte-principal-conteudo:"DM sans", sans-serif;
+  }
+
+  .mochiy-pop-one-regular {
+    font-family: "Mochiy Pop One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  body{
+    background-color: #FEFADC;
+  }
+
+  main{
+    height: 0px;
+  }
+  
+/* Header */
+nav {
+    background: none;
+    box-shadow: none !important;
+  }
+
+  .logoBroto {
+      object-fit: contain;
+  }
+
+  .iconsNav {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  .navbar-togger {
+      border: none;
+      font-size: 1.25rem;
+  }
+
+  .navbar-togger:focus, .btn-close:focus {
+      box-shadow: none;
+      outline: none;
+  }
+
+  .nav-link {
+      color: var(--cor-secundaria-preto);
+      font-family: var(--fonte-principal-conteudo);
+  }
+
+  .nav-link:hover, .nav-link.ative {
+      color: #000;
+  }
+/* final header */
+
+/* footer */
+footer {
+    background-color: var(--cor-primaria-laranja);
+    color: var(--cor-secundaria-begeClaro) ;
+    font-weight: bold ; 
+  }
+
+  footer .nav-link, h5,li{
+    color: var(--cor-secundaria-begeClaro) ;
+    font-weight: bold;
+  }
+
+  footer p {
+      font-size:1.2em;
+      width: 60%;
+      color: var(--cor-secundaria-begeClaro) ;
+  }
+
+  @media (min-width:991px) {
+
+      nav .nav-link::before {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 0%;
+          height: 5px;
+          background-color: var(--cor-secundaria-amarela);
+          visibility: hidden;
+          transition: 0.3s ease-in-out;
+      }
+      
+      nav .nav-link:hover::before, .nav-link.active::before {
+          width: 100%;
+          visibility: visible;
+      }
+  }

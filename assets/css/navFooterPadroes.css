@@ -48,7 +48,7 @@ body{
 }
 
 .lado-esquerdo{
-    width: 60em;
+    width: 66em;
     height: 78vh; 
     background-color: var(--cor-primaria-verde);
     border-bottom-right-radius: 38%;
@@ -146,7 +146,7 @@ body{
     top: 30%;
     border-top-left-radius: 300px;
     border-bottom-left-radius: 300px;
-    width: 60em;
+    width: 54em;
     height: 60em;
     object-fit: cover;
     object-position: center;
@@ -534,10 +534,14 @@ body{
     background-image: url(/assets/imgs/brotoMaiaLogoVerde.png);
     background-repeat: no-repeat;
     background-position: center;
+    margin-bottom: 20px;
 }
 
 .container-grupo .equipe-texto{
-    width: 60%;
+    width: 80%;
+    color: var(--cor-primaria-verde);
+    margin-bottom: 20px;
+    font-size: 2rem;
 } 
 
 .container-grupo{
@@ -598,12 +602,12 @@ body{
 
 .quadrado-fundo .foto-pessoal .wesley{
     background-image: url(/assets/imgs/grupo/wesley.png);
-    background-size: contain;
+    background-size: cover;
     width: 350px;
     background-repeat: no-repeat;
     height: 350px;
     position: relative;
-    bottom: 27px;
+    bottom: 40px;
 }
 
 .quadrado-fundo-victor .foto-pessoal-victor .victor{
@@ -670,13 +674,13 @@ body{
 }
 
 .quadrado-fundo .foto-pessoal .jesse{
-    background-image: url(/assets/imgs/grupo/rapha.png);
-    background-size: contain;
+    background-image: url(/assets/imgs/grupo/kaique.png);
+    background-size: cover;
     width: 350px;
     background-repeat: no-repeat;
     height: 350px;
     position: relative;
-    bottom: 35px;
+    bottom: 40px;
 }
 
 .quadrado-fundo .nomes{

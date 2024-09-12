@@ -1,0 +1,143 @@
+:root {
+    --cor-primaria-laranja: #f58a07;
+    --cor-primaria-verde: #669d31;
+    --cor-secundaria-amarela: #feea00;
+    --cor-secundaria-begeClaro: #fefadc;
+    --cor-secundaria-preto: #2d2c2c;
+    --fonte-logo: "Mochiy Pop One", sans-serif;
+    --fonte-principal-conteudo: "DM sans", sans-serif;
+  }
+  
+  body {
+    background-color: var(--cor-secundaria-begeClaro) !important;
+    font-family: var(--fonte-principal-conteudo);
+  }
+   
+  main {
+    color: var(--cor-secundaria-preto);
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  }
+  
+  .row-cards {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .row-cards h4 {
+    margin-left: 5%;
+    font-weight: bolder;
+  }
+  
+  #sideBar {
+    height: 75.6vh !important;
+    width: 22.4vw !important;
+  }
+  
+/*   .card-item-plano {
+    position: relative;
+    height: 8.8vh !important;
+    width: 20vw !important;
+    right: 10px;
+  } */
+  
+  .detaild-rounded {
+    width: 230px;
+    height: 230px;
+    flex-shrink: 0;
+    border-radius: 283px;
+    border: 40px solid var(--Primria, #f58a07);
+  }
+  
+  #completName{
+      padding-left: 48px;
+  }
+  
+  #rapha{
+      padding-left: 50px;
+  }
+  
+  .card-infos {
+    padding: 2%;
+    width: 100%;
+    height: 72vh !important;
+    margin-top: 0%;
+    margin-bottom: 1%;
+    flex-wrap: wrap;
+  }
+  
+  .colunaCard {
+    border: 1px solid;
+  }
+  
+  .subTitulosCards {
+    font-weight: bolder;
+  }
+  
+  .textosCards {
+    font-weight: 500;
+  }
+  
+  
+  #minhaSenha{
+    background-color: #669d31 !important;
+  }
+  
+  #minhaSenha svg {
+    fill: #fefadc !important;
+  }
+  
+  #minhaSenha p {
+    color: #fefadc !important;
+  }
+
+  form{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+  form input {
+    width: 90%;
+    height:84px;
+    border: 2px solid #000;
+    border-radius: 36px;
+    background: transparent;
+  }
+
+  form label{
+    display: flex;
+    width: 85%;
+    align-items: start;
+    margin-top: 20px;
+  }
+  
+
+  form button{
+    margin-top: 70px;
+    width: 40%;
+    height: 70px;
+    border-radius: 36px;
+    background-color: #669d31;
+    color: #fefadc;
+  }
+  
+  .textosCards,
+  .subTitulosCards {
+    font-family: var(--fonte-principal-conteudo);
+    color: var(--cor-secundaria-preto);
+    font-size: 1.1em;
+  }
+  
+  .card-item-plano:hover {
+    cursor: pointer;
+  }
+  
