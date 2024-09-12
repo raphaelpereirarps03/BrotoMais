@@ -44,7 +44,7 @@
 
 <body>
     <!--Navbar -->
-    <nav class="navbar navbar-expand-lg mb-5 ">
+    <nav class="navbar navbar-expand-lg fixed-top pt-4 p-3">
         <div class="container-fluid">
             <a class="navbar-brand me-auto" href="index.html"><img src="./assets/imgs/brotoMaisLogoLaranja.png"
                     class="logoBroto" alt="Logo Broto Mais"></a>
@@ -57,24 +57,24 @@
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                    <ul class="navbar-nav justify-content-center flex-grow-1 gap-5">
                         <li class="nav-item">
-                            <a class="nav-link fw-bold mx-lg-2" href="index.html">Início</a>
+                            <a class="nav-links fw-bold" href="index.html">Início</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fw-bold mx-lg-2" href="sobre.html">Sobre nós</a>
+                            <a class="nav-links fw-bold" href="sobre.html">Sobre nós</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fw-bold active mx-lg-2" aria-current="page" href="planos.html">Planos</a>
+                            <a class="nav-inicio fw-bold active" aria-current="page" href="planos.html">Planos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fw-bold mx-lg-2" href="">Nossa Loja</a>
+                            <a class="nav-links fw-bold" href="">Nossa Loja</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fw-bold mx-lg-2" href="login.html">Seja um parceiro</a>
+                            <a class="nav-links fw-bold" href="login.html">Seja um parceiro</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fw-bold mx-lg-2" href="#footer">Fale conosco</a>
+                            <a class="nav-links fw-bold" href="#footer">Fale conosco</a>
                         </li>
 
 
@@ -84,10 +84,10 @@
                 </div>
             </div>
             <div class="iconsNav">
-                <a href="#"><i class="fa-solid fa-magnifying-glass mx-3 fa-lg" style="color: #2D2C2C;"></i></a>
-                <a href="#" onclick="abrir_modal2()"><i class="fa-solid fa-basket-shopping mx-3 fa-lg" style="color: #2D2C2C;"></i></a>
-                <a href="./perfilUsuario.html"><i class="fa-solid fa-user mx-3 fa-lg" style="color: #2D2C2C;"></i></a>
-                 <a href="./perfilVend.html"><i class="fa-solid fa-shop mx-3 fa-lg" style="color: #2D2C2C;"></i></a>
+                <a href="#"><i class="fa-solid fa-magnifying-glass mx-3 fa-lg" style="color: #fff;"></i></a>
+                <a href="#" onclick="abrir_modal2()"><i class="fa-solid fa-basket-shopping mx-3 fa-lg" style="color: #fff;"></i></a>
+                <a href="./perfilUsuario.html"><i class="fa-solid fa-user mx-3 fa-lg" style="color: #fff;"></i></a>
+                 <a href="./perfilVend.html"><i class="fa-solid fa-shop mx-3 fa-lg" style="color: #fff;"></i></a>
             </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
                 aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -267,7 +267,6 @@
 
 
     <!--Footer -->
-    <a id="footer" name="footer"></a>
     <footer class="row p-4 d-flex justify-content-between row-cols-md-5 py-5 my-5 ">
         <div class="col mb-3">
             <a href="index.html" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
@@ -334,7 +333,7 @@
     </footer>
     <!-- Fim Footer -->
 <!--MODAL-->
-<div id="fundo_escuro">
+    <div id="fundo_escuro">
     <section id="principal">
         <div id="titulo"><img src="assets/imgs/voltar_claro.png" alt="" onclick="fechar_modal2()"><p>Carrinho</p></div>
         <section id="conteudo">
@@ -363,7 +362,7 @@
             </div>
     
         </section>
-</div>
+    </div>
 
 </section>
 <!--FIM MODAL-->

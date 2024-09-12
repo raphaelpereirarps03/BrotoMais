@@ -35,142 +35,322 @@
     <!-- Linkando MD Bootstrap-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.3.2/mdb.min.css" rel="stylesheet" />
 
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="reveal.js" defer></script>
+
 </head>
 
 <body>
     <!--Navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand me-auto" href="index.html"><img src="./assets/imgs/brotoMaisLogo.png"
-                    class="logoBroto" alt="Logo Broto Mais"></a>
-
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-                aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                    <a href="index.html"><img src="./assets/imgs/brotoMaisLogo.png" class="logoBroto"
-                            alt="Logo Broto Mais"></a>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    <section class="home">
+        <div class="conteudo">
+            <div class="lado-esquerdo">
+                <div class="content efeito-content-topo">
+                    <img src="/assets/imgs/image.png" alt="" class="title">
+                    <div class="subtitulo">
+                        <p><span class="text-bold">Do pequeno produtor, para o seu lar</span></p>
+                    </div>
+                    <div class="textos-subtitulos">
+                        <p>Um jeito diferente de comprar suas plantas, aqui você ajuda o microempreendedor e ainda deixa a sua casa como cara de lar</p>
+                    </div>
+                    <button class="btn-subtitulo">
+                        <p>Conheça Nossa Loja</p>
+                    </button>
                 </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
-                        <li class="nav-item">
-                            <a class="nav-link fw-bold active mx-lg-2" aria-current="page" href="index.html">Início</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link fw-bold mx-lg-2" href="sobre.html">Sobre nós</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link fw-bold mx-lg-2" href="planos.html">Planos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link fw-bold mx-lg-2" href="">Nossa Loja</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link fw-bold mx-lg-2" href="login.html">Seja um parceiro</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link fw-bold mx-lg-2" href="#footer">Fale conosco</a>
-                        </li>
-
-
-                    </ul>
-
-                </div>
+    
+                <nav class="navbar navbar-expand-lg fixed-top pt-4 p-3">
+                    <div class="container-fluid">
+                        <a class="navbar-brand me-auto" href="index.html"><img src="./assets/imgs/brotoMaisLogo.png" class="logoBroto" alt="Logo Broto Mais"></a>
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                            aria-labelledby="offcanvasNavbarLabel">
+                            <div class="offcanvas-header">
+                                <a href="index.html"><img src="./assets/imgs/brotoMaisLogo.png" class="logoBroto"alt="Logo Broto Mais"></a>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <ul class="navbar-nav justify-content-center flex-grow-1 gap-5">
+                                    <li class="nav-item">
+                                        <a class="nav-inicio active fw-bold" aria-current="page" href="index.html">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-links fw-bold " href="sobre.html">Sobre nós</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-links fw-bold " href="planos.html">Planos</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-links fw-bold " href="#">Nossa Loja</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-links fw-bold" href="login.html">Seja um parceiro</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-links fw-bold " href="#footer">Fale conosco</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="iconsNav">
+                            <a href="#"><i class="fa-solid fa-magnifying-glass mx-3 fa-lg" style="color: #fff;"></i></a>
+                            <a href="#"><i class="fa-solid fa-basket-shopping mx-3 fa-lg" style="color: #fff;"></i></a>
+                            <a href="./perfilUsuario.html"><i class="fa-regular fa-user mx-3 fa-lg" style="color: #fff;"></i></a>            </div>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                            aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                </nav>
             </div>
-            <div class="iconsNav">
-                <a href="#"><i class="fa-solid fa-magnifying-glass mx-3 fa-lg" style="color: #2D2C2C;"></i></a>
-                <a href="#"><i class="fa-solid fa-basket-shopping mx-3 fa-lg" style="color: #2D2C2C;"></i></a>
-                <a href="./perfilUsuario.html"><i class="fa-solid fa-user mx-3 fa-lg" style="color: #2D2C2C;"></i></a>
-                 <a href="./perfilVend.html"><i class="fa-solid fa-shop mx-3 fa-lg" style="color: #2D2C2C;"></i></a>
+            <div class="lado-direito">
+                <video src="/assets/imgs/videos/Vídeo do WhatsApp de 2024-09-10 à(s) 18.31.00_3d146557.mp4" autoplay muted loop></video>
             </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
         </div>
-    </nav>
-    <!-- Fim Navbar -->
+        <div class="texto-verde">
+            <h2 class="title-verde efeito-title-verde">Do pequeno produtor, para o seu lar</h2>
+        </div>
+    </section>
+    <section class="diferencial">
+        <div class="quadrado-laranja">
+            <h1 class="titulo efeito-titulo">Por que nos escolher?</h1>
+            <div class="quadrado-maior">
+                <div class="cards card1">
+                    <img src="/assets/imgs/icones/terra.gif" class="terra">
+                    <span class="texto-bold">Pequeno produtor</span>
+                    <p>As plantas que chegam na sua casa são cultivadas pelo pequeno agricultor e chega até você com a garantia e segurança de qualidade.</p>
+                </div>
+                <div class="cards card2">
+                    <img src="/assets/imgs/icones/mao.gif" class="mao">
+                    <span class="texto-bold">Planos</span>
+                    <p>Temos planos personalizados para a sua necessidade, chegando todo mês no seu lar uma plantinha nova para você cuidar e se apaixonar.</p>
+                </div>
+                <div class="cards card3">
+                    <img src="/assets/imgs/icones/vaso.gif" class="vaso">
+                    <span class="texto-bold">Produtos Selecionados</span>
+                    <p>Seleção dos melhores produtos para você cuidar das suas plantas, assim elas vão se manter vivas e colorindo seu ambiente por muito tempo.</p>
+                </div>
+            </div>
+            <h1 class="titulo-aconchego efeito-titulo-aconchego">Um pedaço da natureza na sua casa</h1>
+        </div>
+    </section>
+    <section class="aconchego">
+        <div class="retangulos">
+            <div class="content-retangulos efeito-content-retangulo1">
+                <img src="/assets/imgs/icones/vasos.gif" alt="" class="icones-pequenos">
+                <div class="texto-pequeno">
+                    <span>Aconchego</span>
+                    <p>Elas adicionam beleza e frescor, tornando os espaços mais agradáveis e tranquilizantes.</p>
+                </div>
+            </div>
+            <div class="content-retangulos efeito-content-retangulo2">
+                <img src="/assets/imgs/icones/coracao.gif" alt="" class="icones-pequenos">
+                <div class="texto-pequeno">
+                    <span>Saúde</span>
+                    <p>Elas purificam o ar e aumentam a umidade, promovendo um ambiente mais fresco. </p>
+                </div>
+            </div>
+            <div class="content-retangulos efeito-content-retangulo3">
+                <img src="/assets/imgs/icones/regador.gif" alt="" class="icones-pequenos">
+                <div class="texto-pequeno">
+                    <span>Bem-estar</span>
+                    <p>Elas purificam o ar e aumentam a umidade, promovendo um ambiente mais fresco.</p>
+                </div>
+            </div>
+        </div>
+        <div class="imagem">
+            <video src="/assets/imgs/videos/Vídeo do WhatsApp de 2024-09-10 à(s) 18.32.16_04af2349.mp4" autoplay muted loop></video>
+        </div>
+    </section>
+    <section class="selecao">
+        <div class="left"></div>
+        <div class="meio">
+            <h1 class="texto-selecao efeito-texto-selecao">Seleção de plantas para cada necessidade sua:</h1>
+            <div class="container-circle">
+                <div class="circulos efeito-circulo1">
+                    <div class="icones-circulo">
+                        <img src="/assets/imgs/icones/arvore.gif" alt="" class="gif">
+                    </div>
+                    <div class="text">
+                        <span>Plantas Grandes</span>
+                        <p>Para você que gosta de ter o verde aparente no seu lar.</p>
+                    </div>
+                </div>
+                <div class="circulos efeito-circulo2">
+                    <div class="icones-circulo">
+                        <img src="/assets/imgs/icones/vaso-menor.gif" alt="" class="gif2">
+                    </div>
+                    <div class="text">
+                        <span>Fáceis de Cuidar</span>
+                        <p>Que se encaixam na sua rotina corrida e agitada.</p>
+                    </div>
+                </div>
+                <div class="circulos efeito-circulo1">
+                    <div class="icones-circulo">
+                        <img src="/assets/imgs/icones/clima.gif" alt="" class="gif">
+                    </div>
+                    <div class="text">
+                        <span>Pouca Luz</span>
+                        <p>Mesmo em lugares com pouca luz, continuam vivas.</p>
+                    </div>
+                </div>
+                <div class="circulos efeito-circulo2">
+                    <div class="icones-circulo">
+                        <img src="/assets/imgs/icones/gato-brincando-unscreen 1.gif" alt="" class="gif">
+                    </div>
+                    <div class="text">
+                        <span>Seguras para Animais</span>
+                        <p>Assim você não se preocupa com a segurança dos seus pets.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right"></div>
+    </section>
 
+    <section class="equipe">
+        <div class="container-grupo">
+            <h1 class="texto-equipe efeito-texto-equipe">Quem cuida da</h1>
+            <div class="logo efeito-texto-equipe"></div>
+            <p class="equipe-texto efeito-texto-equipe">Nosso time é composto por profissionais apaixonados pela agricultura, então venha fazer parte você também!</p>
+            <div class="container-equipe">
+                <div class="quadrado-fundo efeito-quadrado1">
+                    <div class="foto-pessoal">
+                        <div class="raphael"></div>
+                    </div>
+                    <div class="nomes">
+                        <span class="nome">Raphael Pereira</span>
+                        <p>P.O & Desenvolvedor Front-End</p>
+                    </div>
+                </div>
+                <div class="quadrado-fundo efeito-quadrado2">
+                    <div class="foto-pessoal">
+                        <div class="bia"></div>
+                    </div>
+                    <div class="nomes">
+                        <span class="nome">Beatriz Marques</span>
+                        <p>Designer & Desenvolvedor Front-End</p>
+                    </div>
+                </div>
+                <div class="quadrado-fundo efeito-quadrado3">
+                    <div class="foto-pessoal">
+                        <div class="wesley"></div>
+                    </div>
+                    <div class="nomes">
+                        <span class="nome">Wesley Rocha</span>
+                        <p>Designer & Desenvolvedor Front-End</p>
+                    </div>
+                </div>
+                <div class="quadrado-fundo-victor efeito-quadrado4">
+                    <div class="foto-pessoal-victor">
+                        <div class="victor"></div>
+                    </div>
+                    <div class="nomes">
+                        <span class="nome">Victor Ramalho</span>
+                        <p>Designer & Desenvolvedor Front-End</p>
+                    </div>
+                </div>
+                <div class="quadrado-fundo efeito-quadrado5">
+                    <div class="foto-pessoal">
+                        <div class="lucas"></div>
+                    </div>
+                    <div class="nomes">
+                        <span class="nome">Lucas Carvalho</span>
+                        <p>Desenvolvedor FullStack</p>
+                    </div>
+                </div>
+                <div class="quadrado-fundo efeito-quadrado6">
+                    <div class="foto-pessoal">
+                        <div class="jesse"></div>
+                    </div>
+                    <div class="nomes">
+                        <span class="nome">Jesse</span>
+                        <p> Desenvolvedor Front-End</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+    </section>
 
-
-
-
-
-
-
-
-
-    <!--Footer -->
     <a id="footer" name="footer"></a>
-    <footer class="row p-4 d-flex justify-content-between row-cols-md-5 py-5 my-5 ">
-        <div class="col mb-3">
-            <a href="index.html" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
-                <img src="./assets/imgs/brotoMaisLogo.png" class="logoBroto" alt="Logo Broto Mais">
-            </a>
-            <p>Do pequeno produtor, para a sua casa</p>
-        </div>
+   <section class="footer">
+        <footer class="row p-4 d-flex justify-content-between row-cols-md-5 py- my-8">
+            <div class="col mb-3">
+                <a href="index.html" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+                    <img src="./assets/imgs/brotoMaisLogo.png" class="logoBroto" alt="Logo Broto Mais">
+                </a>
+                <p>Do pequeno produtor, para a sua casa</p>
+            </div>
 
+            <div class="col mb-3 ">
+                <h5 class="mb-4 fw-bold">Sobre a Broto+</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-4"><a href="#" class="nav-link p-0 ">Quem somos</a></li>
+                    <li class="nav-item mb-4"><a href="#" class="nav-link p-0 ">Seja um parceiro</a></li>
+                    <li class="nav-item mb-4"><a href="#" class="nav-link p-0 ">Nossa loja</a></li>
+                    <li class="nav-item mb-4"><a href="#" class="nav-link p-0 ">Planos</a></li>
 
-
-        <div class="col mb-3 ">
-            <h5 class="mb-4 fw-bold">Sobre a Broto+</h5>
-            <ul class="nav flex-column">
-                <li class="nav-item mb-4"><a href="#" class="nav-link p-0 ">Quem somos</a></li>
-                <li class="nav-item mb-4"><a href="#" class="nav-link p-0 ">Seja um parceiro</a></li>
-                <li class="nav-item mb-4"><a href="#" class="nav-link p-0 ">Nossa loja</a></li>
-                <li class="nav-item mb-4"><a href="#" class="nav-link p-0 ">Planos</a></li>
-
-            </ul>
-        </div>
-
-        <div class="col mb-3">
-            <h5 class="mb-4 fw-bold">Entre em contato </h5>
-            <ul class="nav flex-column">
-                <li class="nav-item mb-1">Telefone: </li>
-                <li class="nav-item mb-1"><a href="#" class="nav-link p-0 ">(11) 2632-4489</a></li>
-                <li class="nav-item mb-4"><a href="#" class="nav-link p-0 ">(11) 1028-5678</a></li>
-                
-                <li class="nav-item mb-1">Email: </li>
-                <li class="nav-item mb-4"><a href="#" class="nav-link p-0 ">brotomais@gmail.com.br</a></li>
-
-                <li class="nav-item mb-1">Endereço: </li>
-                <li class="nav-item mb-4"><a href="#" class="nav-link p-0 ">Rua tito, 54 - Lapa,SP</a></li>
-            </ul>
-        </div>
-
-        <div class="col mb-3">
-            <h5 class="fw-bold">Redes Sociais</h5>
-            <ul class="nav flex-column">
-                <ul class="nav flex-row mb-4">
-                    <li class="nav-item mb-2 me-3"><a href="#" class="nav-link p-0"><i class="fa-brands fa-instagram fa-2xl" style="color: #FEFADC;"></i></a></li>
-                    <li class="nav-item mb-2 me-3"><a href="#" class="nav-link p-0"><i class="fa-brands fa-facebook fa-2xl" style="color: #FEFADC;"></i></a></li>
-                    <li class="nav-item mb-2 me-3"><a href="#" class="nav-link p-0"><i class="fa-brands fa-whatsapp fa-2xl" style="color: #FEFADC;"></i></a></li>
-                    <li class="nav-item mb-2 me-3"><a href="#" class="nav-link p-0"><i class="fa-brands fa-youtube fa-2xl" style="color: #FEFADC;"></i></a></li>
                 </ul>
-            <h5 class="fw-bold">Formas de pagamento</h5>
-            <ul class="nav flex-row mb-4">
-                <li class="nav-item mb-2 me-3"><a href="#" class="nav-link p-0"><img src="./assets/imgs/icons/mastercad.png" alt="" style="height: 30px; width: 60px;"></a></li>
-                <li class="nav-item mb-2 me-3"><a href="#" class="nav-link p-0"><img src="./assets/imgs/icons/visa.png" alt="" style="height: 30px; width: 60px;"></a></li>
-                <li class="nav-item mb-2 me-3"><a href="#" class="nav-link p-0"><img src="./assets/imgs/icons/hipercard.png" alt="" style="height: 30px; width: 60px;"></a></li>
-            </ul>
-            <ul class="nav flex-row mb-4">
-                <li class="nav-item mb-2 me-3"><a href="#" class="nav-link p-0"><img src="./assets/imgs/icons/elo.png" alt="" style="height: 30px; width: 60px;"></a></li>
-                <li class="nav-item mb-2 me-3"><a href="#" class="nav-link p-0"><img src="./assets/imgs/icons/barcode.png" alt="" style="height: 30px; width: 60px;"></a></li>
-                <li class="nav-item mb-2 me-3"><a href="#" class="nav-link p-0"><img src="./assets/imgs/icons/pix.png" alt="" style="height: 30px; width: 60px;"></a></li>
+            </div>
 
-            </ul>
+            <div class="col mb-3">
+                <h5 class="mb-4 fw-bold">Entre em contato </h5>
+                <ul class="nav flex-column">
+                    <li class="sub">Telefone: </li>
+                    <li class="nav-item mb-1"><a href="#" class="nav-link p-0 ">(11) 2632-4489</a></li>
+                    <li class="nav-item mb-4"><a href="#" class="nav-link p-0 ">(11) 1028-5678</a></li>
                 
-                <li class="nav-item mb-1">Prazo de entrega</li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0">3 à 5 dias úteis</a></li>
+                    <li class="sub">Email: </li>
+                    <li class="nav-item mb-4"><a href="#" class="nav-link p-0 ">brotomais@gmail.com.br</a></li>
 
-            </ul>
-        </div>
-    </footer>
+                    <li class="sub">Endereço: </li>
+                    <li class="nav-item mb-4"><a href="#" class="nav-link p-0 ">Rua tito, 54 - Lapa,SP</a></li>
+                </ul>
+            </div>
+
+            <div class="col mb-3">
+                <h5 class="fw-bold">Redes Sociais</h5>
+                <ul class="nav flex-column">
+                    <ul class="nav flex-row mb-4">
+                        <li class="nav-item mb-2 me-3"><a href="#" class="nav-link p-0"><i class="fa-brands fa-instagram fa-2xl" style="color: #FEFADC;"></i></a></li>
+                        <li class="nav-item mb-2 me-3"><a href="#" class="nav-link p-0"><i class="fa-brands fa-facebook fa-2xl" style="color: #FEFADC;"></i></a></li>
+                        <li class="nav-item mb-2 me-3"><a href="#" class="nav-link p-0"><i class="fa-brands fa-whatsapp fa-2xl" style="color: #FEFADC;"></i></a></li>
+                        <li class="nav-item mb-2 me-3"><a href="#" class="nav-link p-0"><i class="fa-brands fa-youtube fa-2xl" style="color: #FEFADC;"></i></a></li>
+                    </ul>
+                <h5 class="fw-bold">Formas de pagamento</h5>
+                <ul class="nav flex-row mb-4">
+                    <li class="nav-item mb-2 me-3"><a href="#" class="nav-link p-0"><img src="./assets/imgs/icons/mastercad.png" alt="" style="height: 30px; width: 60px;"></a></li>
+                    <li class="nav-item mb-2 me-3"><a href="#" class="nav-link p-0"><img src="./assets/imgs/icons/visa.png" alt="" style="height: 30px; width: 60px;"></a></li>
+                    <li class="nav-item mb-2 me-3"><a href="#" class="nav-link p-0"><img src="./assets/imgs/icons/hipercard.png" alt="" style="height: 30px; width: 60px;"></a></li>
+                </ul>
+                <ul class="nav flex-row mb-4">
+                    <li class="nav-item mb-2 me-3"><a href="#" class="nav-link p-0"><img src="./assets/imgs/icons/elo.png" alt="" style="height: 30px; width: 60px;"></a></li>
+                    <li class="nav-item mb-2 me-3"><a href="#" class="nav-link p-0"><img src="./assets/imgs/icons/barcode.png" alt="" style="height: 30px; width: 60px;"></a></li>
+                    <li class="nav-item mb-2 me-3"><a href="#" class="nav-link p-0"><img src="./assets/imgs/icons/pix.png" alt="" style="height: 30px; width: 60px;"></a></li>
+
+                </ul>
+                
+                    <li class="nav-item mb-1">Prazo de entrega</li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">3 à 5 dias úteis</a></li>
+
+                </ul>
+            </div>
+        </footer>
+   </section>
     <!-- Fim Footer -->
 
-
-
+    <!--V libras-->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    <!--Final V libras-->
 
     <!-- Linkando JS do MD Bootstrap -->
     <script type="text/javascript"
@@ -180,6 +360,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+
+    <script src="/assets/js/index.js"></script>
 </body>
 
 </html>

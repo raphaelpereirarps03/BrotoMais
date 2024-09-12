@@ -20,5 +20,14 @@ window.onclick = function(event) {
 let selecionado="false"
 function selecionado() {
   document.querySelector(".card-item-plano").style.backgroundColor="#669D31";
+<<<<<<< HEAD
+  document.querySelector(".fw-normal").style.color="#FEFADC";
+}
+
+
+
+
+=======
   document.querySelector(".fw-normal").style.color="#fefadc";
 }
+>>>>>>> 61454270b1e4f60c370b3c2fdc909f2b2800ea7c

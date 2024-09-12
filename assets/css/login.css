@@ -96,6 +96,9 @@
       font-size: 20px;
     }
   }
+  #fundo_escuro{
+    height: 1000px;
+  }
   @media only screen and (max-width:800px){
     #login_page{
       width: 90%;
