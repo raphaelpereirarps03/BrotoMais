@@ -20,10 +20,10 @@ body{
 }
 
 #content{
-    width: 20%;
+   /* width: 20%;
     height: 600px;
     border-radius: 36px;
-    background:  #669D31;
+    background:  #669D31;*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -39,14 +39,18 @@ body{
     font-family: "DM Sans";
     justify-content: center;
     text-align: center;
+    bottom: 110px;
 }
 
-p{
+#text p{
     font-family: "DM Sans";
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 400;
     font-style: normal!important;
     color: #FEFADC;
+    bottom: 110px;
+    width: 45%;
+    white-space: nowrap;
 }
 
 #text{
@@ -54,34 +58,59 @@ p{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: nowrap;
 }
 
 #plantas{
-    width: 300px;
-    height: 400px;
+    width: 320px;
+}
+
+/*#lirio{
+    width: 400px;
+    bottom: 50px;
+}
+
+#homa{
+    width: 320px;
+    bottom: 50px;
 }
 
 #espada{
-    width: 200px;
-    height: 400px;
+    width: 320px;
+    bottom: 80px;
 }
 
-#lirio{
-    width: 400px;
-    height: 800px;
+#bonsai{
+    width: 320px;
+    bottom: 25px;
 }
 
-#limao{
-    width: 400px;
-    height: 350px;
+#p_lirio{
+    bottom: 80px;
 }
 
-#bambu{
-    width: 200px;
-    height: 400px;
+#p_espada{
+    bottom: 100px;
 }
 
-#carnivora{
-    width: 350px;
-    height: 300px;
+#p_bonsai{
+    bottom: 80px;
+   width: 90%;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   flex-wrap: nowrap;
 }
+#p_bonsai p{
+    font-family: "DM Sans";
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal!important;
+    color: #FEFADC;
+    bottom: 110px;
+    width: 45%;
+    white-space: nowrap;
+}*/
+
+
+
