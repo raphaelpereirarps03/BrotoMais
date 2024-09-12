@@ -28,6 +28,9 @@
     margin: 0px;
     box-sizing: border-box;
 }
+main{
+    background-color: var(--cor-secundaria-begeClaro);
+}
 
 header{
     display: flex;
