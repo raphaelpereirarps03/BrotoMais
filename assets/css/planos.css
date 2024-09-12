@@ -8,6 +8,7 @@
     --fonte-principal-conteudo:"DM sans", sans-serif;
 }
 
+
 .mochiy-pop-one-regular {
     font-family: "Mochiy Pop One", sans-serif;
     font-weight: 400;
@@ -22,9 +23,6 @@
 
 
 }
-
-
-
 
 .card {
     transition: all 1.1s;
@@ -63,6 +61,3 @@
     background-color: #3b6d0c !important;
     color: #FEFADC !important;
 }
-
-
-

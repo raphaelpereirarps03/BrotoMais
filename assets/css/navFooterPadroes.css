@@ -611,13 +611,13 @@ body{
 }
 
 .quadrado-fundo-victor .foto-pessoal-victor .victor{
-    background-image: url(/assets/imgs/grupo/rapha.png);
-    background-size: contain;
+    background-image: url(/assets/imgs/grupo/Imagem_do_WhatsApp_de_2024-09-12_à_s__01.56.24_3f0699e0-removebg-preview.png);
+    background-size: cover;
     background-repeat: no-repeat;
     height: 350px;
     width: 350px;
     position: relative;
-    bottom: 35px;
+    bottom: 40px;
 }
 
 .quadrado-fundo-victor{
@@ -664,7 +664,7 @@ body{
 }
 
 .quadrado-fundo .foto-pessoal .lucas{
-    background-image: url(/assets/imgs/grupo/lucas.png);
+    background-image: url(/assets/imgs/grupo/lucas-ofcial-removebg-preview.png);
     background-size: cover;
     width: 100%;
     background-repeat: no-repeat;
