@@ -28,6 +28,8 @@
     
     <!-- Animation -->
     <link rel="stylesheet" href="assets/css/scroll.css">
+    <!-- Modal -->
+    <link rel="stylesheet" href="assets/css/modal.css">
 
     <link rel="stylesheet" href="assets/css/base.css" type="text/css">
     <link rel="stylesheet" href="assets/css/login.css" type="text/css">
@@ -38,13 +40,13 @@
     <!--Navbar -->
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-            <a class="navbar-brand me-auto" href="index.html"><img src="imgs/Broto+.png"
+            <a class="navbar-brand me-auto" href="index.html"><img src="assets/imgs/Broto+.png"
                     class="logoBroto" alt="Logo Broto Mais"></a>
 
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
                 aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
-                    <a href="index.html"><img src="imgs/Broto+.png" class="logoBroto"
+                    <a href="index.html"><img src="assets/imgs/Broto+.png" class="logoBroto"
                             alt="Logo Broto Mais"></a>
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
@@ -75,10 +77,16 @@
                 </div>
             </div>
             <div class="iconsNav">
+<<<<<<< Updated upstream
                 <a href="#"><i class="fa-solid fa-magnifying-glass mx-3 fa-lg" style="color: #2D2C2C;"></i></a>
                 <a href="#"><i class="fa-solid fa-basket-shopping mx-3 fa-lg" style="color: #2D2C2C;"></i></a>
                 <a href="./perfilUsuario.html"><i class="fa-solid fa-user mx-3 fa-lg" style="color: #2D2C2C;"></i></a>
                 <a href="./perfilVendedor"><i class="fa-solid fa-shop mx-3 fa-lg" style="color: #2D2C2C;"></i></a>
+=======
+                <a href="#"><i class="fa-solid fa-magnifying-glass mx-3 fa-lg" style="color: #000000;"></i></a>
+                <a href="#" onclick="abrir_modal2()"><i class="fa-solid fa-basket-shopping mx-3 fa-lg" style="color: #000000;"></i></a>
+                <a href="#"><i class="fa-regular fa-user mx-3 fa-lg" style="color: #000000;"></i></a>
+>>>>>>> Stashed changes
             </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
                 aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -182,6 +190,40 @@
         </div>
     </footer>
     <!-- Fim Footer -->
+     <!--MODAL-->
+    <div id="fundo_escuro">
+        <section id="principal">
+            <div id="titulo"><img src="assets/imgs/voltar_claro.png" alt="" onclick="fechar_modal2()"><p>Carrinho</p></div>
+            <section id="conteudo">
+                <div id="topo">
+                    <img src="assets/imgs/Planta_carrinho.png" alt="">
+                    <div>
+                        <p>Lírio da paz <br> R$32,90</p>
+                        <input type="number" required placeholder="    1">
+                    </div>
+                </div>
+                <div id="frete">
+                    <div>
+                        <label for="">Digite seu frete:</label>
+                        <br>
+                        <input type="text">
+                    </div>
+                    <p>R$ 12,90</p>
+                </div>
+        
+                <div id="final">
+                    <div>
+                        <h2>TOTAL</h2>
+                        <p>R$ 45,80</p>
+                    </div>
+                    <a href="#" id="a_modal">Comprar</a>
+                </div>
+        
+            </section>
+    </div>
+
+    </section>
+    <!--FIM MODAL-->
     </main>
      <!-- Linkando JS do MD Bootstrap -->
      <script type="text/javascript"
@@ -194,6 +236,9 @@
     </script>
 
     <script src="assets/js/scroll.js"></script>
+
+    <!--MODAL-->
+    <script src="assets/js/modal.js"></script>
     
     </main>  
 </body>
