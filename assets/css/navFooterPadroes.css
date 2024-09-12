@@ -32,12 +32,13 @@
 body{
     scroll-behavior: smooth;
     overflow-x: hidden;
+    background-color: var(--cor-secundaria-begeClaro) !important;
 }
 
 .home{
     width: 100%;
     height: auto;
-    background-color: var(--cor-secundaria-begeClaro);
+    background-color: var(--cor-secundaria-begeClaro) !important;
     display: flex;
     flex-direction: column;
 }
