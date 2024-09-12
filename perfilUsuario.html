@@ -9,6 +9,9 @@
     <!-- Adiciona icone na aba do navegador-->
     <link rel="shortcut icon" type="imagex/png" href="./assets/imgs/icons/brotoMaisIcon.png">
 
+    <!-- Modal -->
+    <link rel="stylesheet" href="assets/css/modal.css">
+
     <!-- Linkando CSS's personalizados-->
     <link rel="stylesheet" href="./assets/css/navFooterPadroes.css" type="text/css">
     <link rel="stylesheet" href="./assets/css/perfilUsuario.css" type="text/css">
@@ -35,7 +38,6 @@
 
     <!-- Linkando MD Bootstrap-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.3.2/mdb.min.css" rel="stylesheet" />
-
 
 
 
@@ -83,9 +85,9 @@
             </div>
            <div class="iconsNav">
                 <a href="#"><i class="fa-solid fa-magnifying-glass mx-3 fa-lg" style="color: #2D2C2C;"></i></a>
-                <a href="#"><i class="fa-solid fa-basket-shopping mx-3 fa-lg" style="color: #2D2C2C;"></i></a>
+                <a href="#" onclick="abrir_modal2()"><i class="fa-solid fa-basket-shopping mx-3 fa-lg" style="color: #2D2C2C;"></i></a>
                 <a href="./perfilUsuario.html"><i class="fa-solid fa-user mx-3 fa-lg" style="color: #2D2C2C;"></i></a>
-                <a href="./perfilVendedor"><i class="fa-solid fa-shop mx-3 fa-lg" style="color: #2D2C2C;"></i></a>
+                <a href="./perfilVend.html"><i class="fa-solid fa-shop mx-3 fa-lg" style="color: #2D2C2C;"></i></a>
             </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
                 aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -150,27 +152,6 @@
                                 </div>
                             </div>
                         </a>
-
-                        <a href="./meusProdutos.html"></a>
-
-                            <div class="row card-item-plano mb-3" id="meuEndereco"
-                                style="border: 2px #2D2C2C solid; margin: auto; width: 90%; border-radius: 10px; padding: 5px;">
-                                <div
-                                    style="display: flex; align-items: center; width: 100%; justify-content: flex-start;">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" fill="#2D2C2C"
-                                        class="bi bi-bag" viewBox="0 0 16 16">
-                                        <path
-                                            d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z" />
-                                    </svg>
-                                    <p class="fw-normal"
-                                        style="margin-left: 10px; margin-bottom: 0; font-size: 1.4em; color: #2D2C2C;">
-                                        Meus
-                                        produtos</p>
-                                </div>
-                            </div>
-                        </a>
-
-
 
                         <a href="./devolucoes.html">
                             <div class="row card-item-plano mb-3"

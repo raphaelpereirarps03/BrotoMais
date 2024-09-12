@@ -65,11 +65,13 @@
       right: 20%;
     }
   }
-  label{
-    width: 100%;
-    color: #fefadc;
-    font-size: 1.5vw;
-    font-weight: 400;
+  form{
+    label{
+      color: #fefadc;
+      width: 100%;
+      font-size: 1.5vw;
+      font-weight: 400;
+    }
   }
   input,#input {
     padding: 25px 0px 25px 0px;
@@ -112,7 +114,6 @@
 
   }
   p{
-    color: #FEFADC;
     font-size: 28px;
     font-style: normal;
     font-weight: 800;
