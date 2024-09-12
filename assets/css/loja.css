@@ -1,116 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
-*{
-    margin: 0px;
-    padding: 0px;
-    border: 0px;
+:root {
+    --cor-primaria-laranja: #F58A07;
+    --cor-primaria-verde: #669D31;
+    --cor-secundaria-amarela: #FEEA00;
+    --cor-secundaria-begeClaro: #FEFADC;
+    --cor-secundaria-preto: #2D2C2C;
+    --fonte-logo: "Mochiy Pop One", sans-serif;
+    --fonte-principal-conteudo: "DM sans", sans-serif;
 }
 
-body{
-    background-color: #FEFADC;
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
 }
 
-.main{
+body {
+    background-color: var(--cor-secundaria-begeClaro);
+}
+
+.main {
     width: 100%;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     margin-bottom: 80px;
 }
 
-#content{
-   /* width: 20%;
-    height: 600px;
-    border-radius: 36px;
-    background:  #669D31;*/
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    float: left;
-}
-
-#button{
-    width: 150px;
-    height: 40px;
-    border-radius: 36px;
-    font-weight: 600;
-    background: #F58A07;
-    font-family: "DM Sans";
-    justify-content: center;
-    text-align: center;
-    bottom: 110px;
-}
-
-#text p{
-    font-family: "DM Sans";
-    font-size: 20px;
-    font-weight: 400;
-    font-style: normal!important;
+.grande {
+    font: 5rem;
     color: #FEFADC;
-    bottom: 110px;
-    width: 45%;
-    white-space: nowrap;
 }
-
-#text{
-    width: 90%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-}
-
-#plantas{
-    width: 320px;
-}
-
-/*#lirio{
-    width: 400px;
-    bottom: 50px;
-}
-
-#homa{
-    width: 320px;
-    bottom: 50px;
-}
-
-#espada{
-    width: 320px;
-    bottom: 80px;
-}
-
-#bonsai{
-    width: 320px;
-    bottom: 25px;
-}
-
-#p_lirio{
-    bottom: 80px;
-}
-
-#p_espada{
-    bottom: 100px;
-}
-
-#p_bonsai{
-    bottom: 80px;
-   width: 90%;
-   display: flex;
-   flex-direction: row;
-   justify-content: space-between;
-   flex-wrap: nowrap;
-}
-#p_bonsai p{
-    font-family: "DM Sans";
-    font-size: 20px;
-    font-weight: 400;
-    font-style: normal!important;
-    color: #FEFADC;
-    bottom: 110px;
-    width: 45%;
-    white-space: nowrap;
-}*/
-
-
-
