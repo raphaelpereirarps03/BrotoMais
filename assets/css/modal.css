@@ -7,7 +7,7 @@
 
 #principal{
     position: absolute;
-    top: 160px;
+    top: 250px;
     width: 750px;
     height: 900px;
     right: 50px;
@@ -113,8 +113,7 @@ input{
     position: absolute;
     width: 100%;
     height: 2000px;
-    top: 0px;
-    backdrop-filter: blur(15px);
+    top: -180px;
     opacity: 0;
     background-color:#2D2C2C;
     visibility: hidden;

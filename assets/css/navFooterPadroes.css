@@ -44,11 +44,12 @@ body{
 
 .conteudo{
     display: flex;
+    justify-content: space-between;
     width: 100%;
 }
 
 .lado-esquerdo{
-    width: 66em;
+    width: 64%;
     height: 78vh; 
     background-color: var(--cor-primaria-verde);
     border-bottom-right-radius: 38%;
@@ -82,9 +83,11 @@ body{
     color: var(--cor-secundaria-begeClaro);
     font-weight: 500;
 }
-
+.subtitulo{
+    width: 90%;
+}
 .textos-subtitulos{
-    width: 60%;
+    width: 80%;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -141,12 +144,16 @@ body{
     color: var(--cor-primaria-verde);
 }
 
+.lado-direito{
+    width: 35%;
+}
+
 .lado-direito video{
     position: relative;
     top: 30%;
     border-top-left-radius: 300px;
     border-bottom-left-radius: 300px;
-    width: 54em;
+    width: 100%;
     height: 60em;
     object-fit: cover;
     object-position: center;
@@ -339,7 +346,7 @@ body{
 }
 
 .content-retangulos{
-    width: 48rem;
+    width: 80%;
     height: 12rem;
     border-radius: 30px;
     border: 2px solid var(--cor-secundaria-preto);
@@ -374,13 +381,15 @@ body{
     font-size: 1.5rem;
     width: 85%;
 }
-
+.imagem{
+    width: 40%;
+}
 .imagem video{
     position: relative;
     top: 60%;
     border-top-left-radius: 300px;
     border-bottom-left-radius: 300px;
-    width: 45em;
+    width: 100%;
     height: 60em;
     object-fit: cover;
     object-position: center;
@@ -419,7 +428,6 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    width: 70%;
     gap: 100px;
     height: 60rem;
     align-items: center;
@@ -483,7 +491,7 @@ body{
 .left{
     height: 75vh;
     width: 20%;
-    background-image: url(/assets/imgs/icones/trevoesq.png);
+    background-image: url(../imgs/icones/trevoesq.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -494,7 +502,7 @@ body{
 .right{
     height: 75vh;
     width: 20%;
-    background-image: url(/assets/imgs/icones/trevodir.png);
+    background-image: url(../imgs/icones/trevodir.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -531,7 +539,7 @@ body{
     width: 300px;
     height: 100px;
     background-size: contain;
-    background-image: url(/assets/imgs/brotoMaiaLogoVerde.png);
+    background-image: url(../imgs/brotoMaiaLogoVerde.png);
     background-repeat: no-repeat;
     background-position: center;
     margin-bottom: 20px;
@@ -558,7 +566,6 @@ body{
     grid-template-columns: 1fr 1fr 1fr;
     grid-row: 1fr 1fr 1fr;
     height: 110vh;
-    width: 100%;
     place-items: center;
 }
 
@@ -582,7 +589,7 @@ body{
 }
 
 .quadrado-fundo .foto-pessoal .raphael{
-    background-image: url(/assets/imgs/grupo/rapha.png);
+    background-image: url(../imgs/grupo/rapha.png);
     background-size: contain;
     width: 350px;
     background-repeat: no-repeat;
@@ -591,7 +598,7 @@ body{
     bottom: 35px;
 }
 .quadrado-fundo .foto-pessoal .bia{
-    background-image: url(/assets/imgs/grupo/bia.png);
+    background-image: url(../imgs/grupo/bia.png);
     background-size: cover;
     width: 350px;
     background-repeat: no-repeat;
@@ -601,7 +608,7 @@ body{
 }
 
 .quadrado-fundo .foto-pessoal .wesley{
-    background-image: url(/assets/imgs/grupo/wesley.png);
+    background-image: url(../imgs/grupo/wesley.png);
     background-size: cover;
     width: 350px;
     background-repeat: no-repeat;
@@ -611,7 +618,7 @@ body{
 }
 
 .quadrado-fundo-victor .foto-pessoal-victor .victor{
-    background-image: url(/assets/imgs/grupo/Imagem_do_WhatsApp_de_2024-09-12_à_s__01.56.24_3f0699e0-removebg-preview.png);
+    background-image: url(../imgs/grupo/Imagem_do_WhatsApp_de_2024-09-12_à_s__01.56.24_3f0699e0-removebg-preview.png);
     background-size: cover;
     background-repeat: no-repeat;
     height: 350px;
@@ -664,7 +671,7 @@ body{
 }
 
 .quadrado-fundo .foto-pessoal .lucas{
-    background-image: url(/assets/imgs/grupo/lucas-ofcial-removebg-preview.png);
+    background-image: url(../imgs/grupo/lucas-ofcial-removebg-preview.png);
     background-size: cover;
     width: 100%;
     background-repeat: no-repeat;
@@ -674,7 +681,7 @@ body{
 }
 
 .quadrado-fundo .foto-pessoal .jesse{
-    background-image: url(/assets/imgs/grupo/kaique.png);
+    background-image: url(../imgs/grupo/kaique.png);
     background-size: cover;
     width: 350px;
     background-repeat: no-repeat;
@@ -709,7 +716,7 @@ footer{
     background-color: var(--cor-primaria-laranja);
     color: var(--cor-secundaria-begeClaro);
     font-weight: bold;
-    width: 100%;
+    width: 105%;
     overflow-x: hidden;
 }
 
@@ -723,4 +730,3 @@ footer .nav-link, ul, li{
     font-weight: bold;
     font-size: 1.2rem;
 }
-
