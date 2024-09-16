@@ -77,3 +77,18 @@ main {
   #meuPerfil p {
     color: #fefadc !important;
   }
+
+  .menu-oculto {
+    display: none;
+  }
+
+  /*Config para mobile*/
+  @media only screen and (max-width:990px){
+    .card-menu {
+        display:none !important;
+    }
+
+    .menu-oculto {
+        display:initial;
+    }
+  }

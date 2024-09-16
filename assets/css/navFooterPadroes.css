@@ -178,9 +178,22 @@ body{
     align-items: center;
 }
 
-.navbar-togger {
-    border: none;
-    font-size: 1.25rem;
+.offcanvas{
+    position: absolute;
+    z-index: 999999;
+    background-color: #669D31 !important;
+    height: 100% !important; 
+}
+
+.offcanvas-end {
+    z-index: 999999;
+    height: 1000px !important;
+}
+
+.offcanvas-body{
+    z-index: 999999;
+
+
 }
 
 .navbar-togger:focus, .btn-close:focus {
