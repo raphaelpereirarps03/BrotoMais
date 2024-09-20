@@ -267,6 +267,8 @@
     font-size: 1.8vw;
     font-style: italic;
     font-weight: 400;
+  }
+  #p2{
     visibility: hidden;
   }
   #review{

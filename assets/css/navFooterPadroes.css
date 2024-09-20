@@ -730,6 +730,7 @@ footer{
     color: var(--cor-secundaria-begeClaro);
     font-weight: bold;
     width: 105%;
+    top: 70px;
     overflow-x: hidden;
 }
 
