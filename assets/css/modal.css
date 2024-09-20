@@ -118,3 +118,7 @@ input{
     background-color:#2D2C2C;
     visibility: hidden;
 }
+
+.blur{
+    filter: blur(10px);
+}
