@@ -97,7 +97,7 @@
     }
   }
   #fundo_escuro{
-    height: 1000px;
+    height: 1200px;
   }
   @media only screen and (max-width:800px){
     #login_page{

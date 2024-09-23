@@ -271,7 +271,7 @@ body{
 .quadrado-laranja h1{
     position: relative;
     bottom: 8%;
-    right: 20%;
+    right:15%;
     font-family: var(--fonte-principal-conteudo);
     font-weight: bold;
     font-size: 4.75rem;
@@ -294,6 +294,9 @@ body{
     display: flex;
     align-items: center;
     flex-direction: column;
+    span{
+        white-space: nowrap;
+    }
 }
 
 .cards .terra{
@@ -324,7 +327,7 @@ body{
     color: var(--cor-secundaria-preto);
     text-align: center;
     font-size: 1.2rem;
-    padding: 10px 40px;
+    padding: 10px 30px;
     font-family: var(--fonte-principal-conteudo);
     font-weight: 500;
 }
